@@ -1,0 +1,49 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			CtrlWZoom = false,
+			NameSet = true,
+			Inputs = {
+				GlobalOut = Input { Value = 478, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				Center = Input { Value = { 0.5, 0.125 }, },
+				LayoutSize = Input { Value = 0.591, },
+				SelectElement = Input { Value = 1, },
+				Select = Input { Value = 1, },
+				Enabled2 = Input { Value = 1, },
+				Red1 = Input { Value = 0.784313725490196, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				StyledText = Input { Value = "Amen", },
+				Font = Input { Value = "Laila", },
+				Style = Input { Value = "Bold", },
+				Size = Input {
+					SourceOp = "Template大小",
+					Source = "Value",
+				},
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Thickness2 = Input { Value = 0.0614, },
+				Green2 = Input { Value = 1, },
+				Blue2 = Input { Value = 1, },
+				Softness2 = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { -896.149, 62.4313 } },
+		}, 
+		["Template大小"] = BezierSpline {
+			SplineColor = { Red = 218, Green = 218, Blue = 218 },
+			CtrlWZoom = false,
+			KeyFrames = {
+				[0] = { 0.3048, RH = { 8.66666666666667, 0.3048 }, Flags = { Loop = true, Pingpong = true } },
+				[26] = { 0.2575, LH = { 17.3333333333333, 0.2575 }, Flags = { Loop = true, Pingpong = true } }
+			}
+		}
+	}
+}
+
+
+
+
+

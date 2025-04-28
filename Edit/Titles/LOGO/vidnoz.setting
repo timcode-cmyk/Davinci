@@ -1,0 +1,83 @@
+{
+	Tools = ordered() {
+		Group1 = GroupOperator {
+			CtrlWZoom = false,
+			Outputs = {
+				Output1 = InstanceOutput {
+					SourceOp = "Merge1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo {
+				Pos = { 88.7749, -34.697 },
+				Flags = {
+					AllowPan = false,
+					ConnectedSnap = true,
+					AutoSnap = true,
+					RemoveRouters = true
+				},
+				Size = { 130.667, 138.288, 12.6667, 12.1212 },
+				Direction = "Horizontal",
+				PipeStyle = "Direct",
+				Scale = 1,
+				Offset = { -84.1082, 8.0303 }
+			},
+			Tools = ordered() {
+				Loader1 = Loader {
+					Clips = {
+						Clip {
+                            ID = "Clip1",
+                            Filename = "Setting:Media/vidnoz.png",
+                            FormatID = "PNGFormat",
+                            StartFrame = -1,
+                            LengthSetManually = true,
+                            TrimIn = 0,
+                            TrimOut = 0,
+                            ExtendFirst = 0,
+                            ExtendLast = 0,
+                            Loop = 0,
+                            AspectMode = 0,
+                            Depth = 0,
+                            TimeCode = 0,
+                            GlobalStart = 0,
+                            GlobalEnd = 0
+						}
+					},
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 139.108, 19.6362 } },
+				},
+				Background1 = Background {
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 139.108, 82.2273 } },
+				},
+				Merge1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.072742, 0.043618573267485 }, },
+						Size = Input { Value = 0.715, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 139.108, 49.5 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "Group1"
+}

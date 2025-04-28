@@ -1,0 +1,26 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			CtrlWZoom = false,
+			NameSet = true,
+			Inputs = {
+				GlobalOut = Input { Value = 149, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				Center = Input { Value = { 0.5, 0.0654865066075642 }, },
+				Red1 = Input { Value = 0.299, },
+				Green1 = Input { Value = 0.299, },
+				Blue1 = Input { Value = 0.299, },
+				Alpha1 = Input { Value = 0.4, },
+				StyledText = Input { Value = "@friends.who.love.jesus", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Semibold", },
+				Size = Input { Value = 0.0469, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, }
+			},
+			ViewInfo = OperatorInfo { Pos = { -896.149, 62.4313 } },
+		}
+	}
+}

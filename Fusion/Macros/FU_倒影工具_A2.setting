@@ -1,0 +1,466 @@
+{
+	Tools = ordered() {
+		["FU_倒影工具_A2"] = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "分辨率",
+					Source = "Input",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "分辨率",
+					Source = "Width",
+					Name = "分辨率",
+					Default = 1280,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "原图",
+					Source = "MtlStdInputs.Diffuse.Opacity",
+					Name = "整体透明度",
+					Default = 1,
+				},
+				Input2 = InstanceInput {
+					SourceOp = "控制倒影透明度",
+					Source = "BlendClone",
+					Name = "倒影透明度",
+					Default = 1,
+				},
+				Input33 = InstanceInput {
+					SourceOp = "Blur",
+					Source = "XBlurSize",
+					Name = "倒影全局模糊",
+					Default = 1,
+				},
+				Input34 = InstanceInput {
+					SourceOp = "DirectionalBlur1",
+					Source = "Type",
+					Name = "倒影方向模糊类型",
+					Default = 0,
+				},
+				Input35 = InstanceInput {
+					SourceOp = "DirectionalBlur1",
+					Source = "Length",
+					Name = "倒影方向模糊长度",
+					Default = 0,
+				},
+				Input36 = InstanceInput {
+					SourceOp = "DirectionalBlur1",
+					Source = "Angle",
+					Name = "倒影方向模糊角度",
+					Default = -90,
+				},
+				Input37 = InstanceInput {
+					SourceOp = "DirectionalBlur1",
+					Source = "Glow",
+					Name = "倒影模糊亮度",
+					Default = 0,
+				},
+				Input38 = InstanceInput {
+					SourceOp = "DirectionalBlur1",
+					Source = "ClippingMode",
+					Name = "倒影方向模糊修剪类型",
+				},
+				Input3 = InstanceInput {
+					SourceOp = "原图",
+					Source = "SurfacePlaneInputs.SubdivisionWidth",
+					Name = "Subdivision Level_细分级别",
+					Default = 10,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "样式",
+					Source = "GradientType",
+				},
+				Input6 = InstanceInput {
+					SourceOp = "样式",
+					Source = "Start",
+					DefaultX = 0.498507462686567,
+					DefaultY = 0.728116710875332,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "样式",
+					Source = "End",
+					DefaultX = 0.494029850746269,
+					DefaultY = -0.0119363395225464,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "样式",
+					Source = "Gradient",
+				},
+				Input9 = InstanceInput {
+					SourceOp = "样式",
+					Source = "GradientInterpolationMethod",
+				},
+				Input10 = InstanceInput {
+					SourceOp = "样式",
+					Source = "Offset",
+					Name = "渐变偏移",
+					Default = 0,
+				},
+				Input11 = InstanceInput {
+					SourceOp = "Transform3D1",
+					Source = "Transform3DOp.Translate.Y",
+					Name = "原图与倒影偏移距离",
+					Default = 0,
+				},
+				Input32 = InstanceInput {
+					SourceOp = "倒影",
+					Source = "Transform3DOp.Rotate.X",
+					Name = "倒影旋转",
+					Default = 180,
+				},
+				Tab1 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Translation",
+					Name = "位置变换",
+					InstanceInput="LabelControl",
+				},
+				Input12 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Translate.X",
+					Default = 0,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Translate.Y",
+					Default = 0,
+				},
+				Input14 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Translate.Z",
+					Default = 0,
+				},
+				Tab3 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Rotation",
+					Name = "位置旋转",
+				InstanceInput="LabelControl",
+				},
+				Input15 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Rotate.RotOrder",
+				},
+				Input16 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Rotate.X",
+					Default = 0,
+				},
+				Input17 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Rotate.Y",
+					Default = 0,
+				},
+				Input18 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Rotate.Z",
+					Default = 0,
+				},
+				Input22 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.ScaleLock",
+					Default = 1,
+				},
+				Input23 = InstanceInput {
+					SourceOp = "控制大小位置",
+					Source = "Transform3DOp.Scale.X",
+					Name = "Scale",
+					Default = 1,
+				},
+				MainInput2 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "SceneInput",
+				},
+				Input24 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Bender",
+					Name = "弯曲类型",
+				},
+				Input25 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Amount",
+					Name = "弯曲强度",
+					Default = 0,
+				},
+				Input26 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Axis",
+					Name = "弯曲轴",
+					Default = 0,
+				},
+				Input27 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Angle",
+					Name = "弯曲角度",
+					Default = 90,
+				},
+				Input28 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Center",
+					Name = "中心",
+					Default = 0.5,
+				},
+				Input29 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "RangeMin",
+					ControlGroup = 31,
+					Name = "最小范围",
+					Default = 0,
+				},
+				Input30 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "RangeMax",
+					ControlGroup = 31,
+					Name = "最大范围",
+					Default = 1,
+				},
+				Input31 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Group",
+					Name = "组对象",
+					Default = 0,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Bender3D1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				["分辨率"] = BetterResize {
+					NameSet = true,
+					Inputs = {
+						Width = Input { Value = 1280, },
+						Height = Input { Value = 1024, },
+						KeepAspect = Input { Value = 1, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 275, 247.5 } },
+				},
+				PipeRouter1 = PipeRouter {
+					Inputs = {
+						Input = Input {
+							SourceOp = "分辨率",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { 385, 247.5 } },
+				},
+				DirectionalBlur1 = DirectionalBlur {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Type = Input { Value = 2, },
+						Angle = Input { Value = -90, },
+						Input = Input {
+							SourceOp = "PipeRouter1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 181.5 } },
+				},
+				Blur = Blur {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Input = Input {
+							SourceOp = "DirectionalBlur1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 214.5 } },
+				},
+				["控制倒影透明度"] = Merge {
+					NameSet = true,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Blur",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+						EffectMask = Input {
+							SourceOp = "Bitmap1",
+							Source = "Mask",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 385, 346.5 } },
+				},
+
+				Background1 = Background {
+					NameSet = true,
+					Inputs = {
+						Width = Input {
+							Value = 1280,
+							Expression = "样式.Width",
+						},
+						Height = Input {
+							Value = 1024,
+							Expression = "样式.Height",
+						},
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 165, 346.5 } },
+				},
+				["倒影"] = ImagePlane3D {
+					NameSet = true,
+					SourceOp = "原图",
+					Inputs = {
+						SceneInput = Input { },
+						["Transform3DOp.Nest"] = Input { },
+						["Transform3DOp.Translation"] = Input { },
+						["Transform3DOp.Translate.X"] = Input { },
+						["Transform3DOp.Translate.Y"] = Input {
+							Value = 0.4,
+							Expression = "-Transform3DOp.Pivot.Y"
+						},
+						["Transform3DOp.Translate.Z"] = Input { },
+						["Transform3DOp.Rotation"] = Input { },
+						["Transform3DOp.Rotate.X"] = Input { Value = 180, },
+						["Transform3DOp.PivotNest"] = Input { Value = 1, },
+						["Transform3DOp.Pivot.X"] = Input { },
+						["Transform3DOp.Pivot.Y"] = Input {
+							Value = -0.4,
+							Expression = "分辨率.Height/分辨率.Width/-2"
+						},
+						["Transform3DOp.Pivot.Z"] = Input { },
+						["Transform3DOp.ScaleNest"] = Input { },
+						["Transform3DOp.ScaleLock"] = Input { },
+						["Transform3DOp.Scale.X"] = Input { },
+						["Transform3DOp.Scale.Y"] = Input { },
+						["Transform3DOp.Scale.Z"] = Input { },
+						["Transform3DOp.UseTarget"] = Input { },
+						["Transform3DOp.TargetNest"] = Input { },
+						["Transform3DOp.Target.X"] = Input { },
+						["Transform3DOp.Target.Y"] = Input { },
+						["Transform3DOp.Target.Z"] = Input { },
+						["Transform3DOp.InvertTransform"] = Input { },
+						["Transform3DOp.Import"] = Input { },
+						["SurfacePlaneInputs.Visibility.Nest"] = Input { },
+						["SurfacePlaneInputs.Lighting.Nest"] = Input { },
+						["SurfacePlaneInputs.Matte.Nest"] = Input { },
+						["SurfacePlaneInputs.BlendMode.Nest"] = Input { },
+						["SurfacePlaneInputs.Controls.Nest"] = Input { },
+						["SurfacePlaneInputs.ObjectID.Nest"] = Input { },
+						MaterialInput = Input {
+							SourceOp = "控制倒影透明度",
+							Source = "Output",
+						},
+						["MtlStdInputs.Diffuse.Nest"] = Input { },
+						["MtlStdInputs.Specular.Nest"] = Input { },
+						["MtlStdInputs.Transmittance.Nest"] = Input { },
+						["MtlStdInputs.MaterialIDNest"] = Input { },
+						StartEndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 550, 346.5 } },
+				},
+				["原图"] = ImagePlane3D {
+					NameSet = true,
+					Inputs = {
+						["Transform3DOp.Translate.Y"] = Input {
+							Value = 0.4,
+							Expression = "-Transform3DOp.Pivot.Y",
+						},
+						["Transform3DOp.PivotNest"] = Input { Value = 1, },
+						["Transform3DOp.Pivot.Y"] = Input {
+							Value = -0.4,
+							Expression = "分辨率.Height/分辨率.Width/-2",
+						},
+						["SurfacePlaneInputs.ObjectID.ObjectID"] = Input { Value = 1, },
+						MaterialInput = Input {
+							SourceOp = "PipeRouter1",
+							Source = "Output",
+						},
+						["MtlStdInputs.MaterialID"] = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 550, 247.5 } },
+				},
+				["样式"] = Background {
+					NameSet = true,
+					Inputs = {
+						Width = Input {
+							Value = 1280,
+							Expression = "分辨率.Width",
+						},
+						Height = Input {
+							Value = 1024,
+							Expression = "分辨率.Height",
+						},
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Type = Input { Value = FuID { "Gradient" }, },
+						Start = Input { Value = { 0.498507462686567, 0.728116710875332 }, },
+						End = Input { Value = { 0.494029850746269, -0.0119363395225464 }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 165, 412.5 } },
+				},
+				Bitmap1 = BitmapMask {
+					NameSet = true,
+					Inputs = {
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Image = Input {
+							SourceOp = "样式",
+							Source = "Output",
+						},
+						Channel = Input { Value = FuID { "Luminance" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 385, 412.5 } },
+				},
+				Transform3D1 = Transform3D {
+					Inputs = {
+						SceneInput = Input {
+							SourceOp = "原图",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 660, 247.5 } },
+				},
+				Transform3D1_1 = Transform3D {
+					Inputs = {
+						SceneInput = Input {
+							SourceOp = "倒影",
+							Source = "Output",
+						},
+						["Transform3DOp.Translate.Y"] = Input { Expression = "-Transform3D1.Transform3DOp.Translate.Y", },
+					},
+					ViewInfo = OperatorInfo { Pos = { 660, 346.5 } },
+				},
+				["控制大小位置"] = Merge3D {
+					NameSet = true,
+					Inputs = {
+						["Transform3DOp.PivotNest"] = Input { Value = 1, },
+						SceneInput1 = Input {
+							SourceOp = "Transform3D1",
+							Source = "Output",
+						},
+						SceneInput2 = Input {
+							SourceOp = "Transform3D1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 770, 346.5 } },
+				},
+				Bender3D1 = Bender3D {
+					CtrlWZoom = false,
+					NameSet = true,
+					Inputs = {
+						SceneInput = Input {
+							SourceOp = "控制大小位置",
+							Source = "Output",
+						},
+						Axis = Input { Value = 0, },
+						Angle = Input { Value = 90, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 880, 346.5 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "FU_倒影工具_A2"
+}

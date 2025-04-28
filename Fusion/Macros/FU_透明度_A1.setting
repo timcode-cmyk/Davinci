@@ -1,0 +1,41 @@
+{
+	Tools = ordered() {
+		["FU_透明度_A1"] = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "BrightnessContrast1",
+					Source = "Input",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "BrightnessContrast1",
+					Source = "Gain",
+					Name = "透明度",
+					MaxScale = 1,
+					Default = 1,
+				},
+				Input1 = InstanceInput {
+					SourceOp = "BrightnessContrast1",
+					Source = "EffectMask",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "BrightnessContrast1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				BrightnessContrast1 = BrightnessContrast {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						Alpha = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 645.634, 62.8049 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "FU_透明度_A1"
+}

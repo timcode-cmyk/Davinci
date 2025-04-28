@@ -1,0 +1,513 @@
+{
+	Tools = ordered() {
+		["消失遮罩"] = RectangleMask {
+			NameSet = true,
+			Inputs = {
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				SoftEdge = Input { Value = 0.0677, },
+				Invert = Input { Value = 1, },
+				MaskWidth = Input { Value = 1216, },
+				MaskHeight = Input { Value = 1791, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Center = Input { Value = { 0.475225225225225, 0.273836204632525 }, },
+				Width = Input { Value = 1.59009009009009, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 766.565, 248.42 } },
+		},
+		MediaOut1 = MediaOut {
+			Inputs = {
+				Index = Input { Value = "0", },
+				Input = Input {
+					SourceOp = "泪滴3",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1495.46, 49.5 } },
+		},
+		["泪痕1"] = Merge {
+			NameSet = true,
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "消失遮罩",
+					Source = "Mask",
+				},
+				Blend = Input { Value = 0.732, },
+				Background = Input {
+					SourceOp = "素材",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Blur1",
+					Source = "Output",
+				},
+				ApplyMode = Input { Value = FuID { "Dissolve" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 261.777, 49.5 } },
+		},
+		["泪滴1"] = Merge {
+			NameSet = true,
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "消失遮罩",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "泪痕2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Transform1_1_2",
+					Source = "Output",
+				},
+				Center = Input { Value = { 0.381204452860504, 0.597265664069248 }, },
+				Size = Input { Value = 0.147112646040717, },
+				ApplyMode = Input { Value = FuID { "Screen" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 766.565, 49.5 } },
+		},
+		TimeSpeed1 = TimeSpeed {
+			Inputs = {
+				Speed = Input { Value = 0.78, },
+				Delay = Input { Value = -36.9, },
+				Input = Input {
+					SourceOp = "泪滴1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 875.898, 49.5 } },
+		},
+		["泪滴2"] = Merge {
+			NameSet = true,
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "消失遮罩",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "TimeSpeed1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Transform1_1_3",
+					Source = "Output",
+				},
+				Center = Input { Value = { 0.381204452860504, 0.597265664069248 }, },
+				Size = Input { Value = 0.147112646040717, },
+				ApplyMode = Input { Value = FuID { "Screen" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 986.565, 49.5 } },
+		},
+		["泪滴3"] = Merge {
+			CtrlWZoom = false,
+			NameSet = true,
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "消失遮罩",
+					Source = "Mask",
+				},
+				Background = Input {
+					SourceOp = "泪滴2",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "TimeSpeed2",
+					Source = "Output",
+				},
+				Center = Input { Value = { 0.381204452860504, 0.597265664069248 }, },
+				Size = Input { Value = 0.147112646040717, },
+				ApplyMode = Input { Value = FuID { "Screen" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 1214.35, 49.5 } },
+		},
+		["泪痕2"] = Merge {
+			NameSet = true,
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "消失遮罩",
+					Source = "Mask",
+				},
+				Blend = Input { Value = 0.732, },
+				Background = Input {
+					SourceOp = "泪痕1",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "TimeSpeed3",
+					Source = "Output",
+				},
+				ApplyMode = Input { Value = FuID { "Dissolve" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 491.432, 49.5 } },
+		},
+		Instance_Transform1_1_2 = Transform {
+			SourceOp = "位置动画",
+			Inputs = {
+				SettingsNest = Input {
+				},
+				TransformNest = Input {
+				},
+				ReferenceSize = Input {
+				},
+				Input = Input {
+					SourceOp = "ColorCorrector1",
+					Source = "Output",
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				},
+				EffectMask = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 766.565, 3.52345 } },
+		},
+		Path1_1 = PolyPath {
+			DrawMode = "InsertAndModify",
+			Inputs = {
+				Displacement = Input {
+					SourceOp = "Path1_1位移",
+					Source = "Value",
+				},
+				PolyLine = Input {
+					Value = Polyline {
+						Points = {
+							{ Linear = true, LockY = true, X = 0.115456682082554, Y = 0.109198139456513, RX = 0.157852628434031, RY = -1.68673433970072 },
+							{ LockY = true, X = -0.245345449425431, Y = -4.11965368424625, LX = 0.158896297964902, LY = 1.40578699284906, RX = -0.0240534754338662, RY = -2.50640504702526 },
+							{ Linear = true, LockY = true, X = -0.317505875727029, Y = -11.638868825322, LX = 0.0240534754338662, LY = 2.50640504702526 }
+						}
+					},
+				}
+			},
+		},
+		["Path1_1位移"] = BezierSpline {
+			SplineColor = { Red = 69, Green = 214, Blue = 236 },
+			NameSet = true,
+			KeyFrames = {
+				[0] = { 0, RH = { 26.3333333333333, 0 }, Flags = { LockedY = true } },
+				[79] = { 0.361487780930048, LH = { 52.6703955104135, 0.0928183473628387 }, RH = { 85.3326998949051, 0.426107167612753 }, Flags = { LockedY = true } },
+				[98] = { 1, LH = { 91.6666666666667, 1 }, Flags = { LockedY = true } }
+			}
+		},
+		["位置动画角度"] = BezierSpline {
+			SplineColor = { Red = 198, Green = 225, Blue = 247 },
+			CtrlWZoom = false,
+			NameSet = true,
+			KeyFrames = {
+				[0] = { 0, Flags = { Linear = true } }
+			}
+		},
+		TimeSpeed3 = TimeSpeed {
+			Inputs = {
+				Delay = Input { Value = 73.2, },
+				Input = Input {
+					SourceOp = "Instance_Blur1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 491.432, -1.2846 } },
+		},
+		TimeSpeed2 = TimeSpeed {
+			Inputs = {
+				Delay = Input { Value = 87.6, },
+				Input = Input {
+					SourceOp = "Instance_Transform1_1_4",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1214.35, 2.911 } },
+		},
+		Instance_Transform1_1_3 = Transform {
+			SourceOp = "位置动画",
+			Inputs = {
+				SettingsNest = Input {
+				},
+				TransformNest = Input {
+				},
+				ReferenceSize = Input {
+				},
+				Input = Input {
+					SourceOp = "ColorCorrector1",
+					Source = "Output",
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				},
+				EffectMask = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 986.565, 7.2636 } },
+		},
+		Instance_Blur1 = Blur {
+			SourceOp = "Blur1",
+			Inputs = {
+				SettingsNest = Input {
+				},
+				Input = Input {
+					SourceOp = "Instance_Trails1",
+					Source = "Output",
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				},
+				EffectMask = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 491.432, -46.4725 } },
+		},
+		Blur1 = Blur {
+			Inputs = {
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				Input = Input {
+					SourceOp = "Trails1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 261.777, -48.3681 } },
+		},
+		Instance_Transform1_1_4 = Transform {
+			SourceOp = "位置动画",
+			Inputs = {
+				SettingsNest = Input {
+				},
+				TransformNest = Input {
+				},
+				ReferenceSize = Input {
+				},
+				Input = Input {
+					SourceOp = "ColorCorrector1",
+					Source = "Output",
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				},
+				EffectMask = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1214.35, -58.7329 } },
+		},
+		["素材"] = Background {
+			NameSet = true,
+			Inputs = {
+				GlobalOut = Input { Value = 239, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 64.2613, 49.5 } },
+		},
+		Instance_Trails1 = Trails {
+			SourceOp = "Trails1",
+			Inputs = {
+				SettingsNest = Input {
+				},
+				Restart = Input {
+					Value = 1,
+				},
+				Input = Input {
+					SourceOp = "Merge1_1_1",
+					Source = "Output",
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				},
+				EffectMask = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 491.432, -84.1849 } },
+		},
+		Trails1 = Trails {
+			Inputs = {
+				GainRed = Input { Value = 0.932, },
+				XBlurSize = Input { Value = 0.3, },
+				Operator = Input { Value = FuID { "Conjoint" }, },
+				Gain = Input { Value = 0.906, },
+				Input = Input {
+					SourceOp = "Merge1_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 261.777, -83.0823 } },
+		},
+		Merge1_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "空背景",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "位置动画",
+					Source = "Output",
+				},
+				Center = Input { Value = { 0.381204452860504, 0.597265664069248 }, },
+				Size = Input { Value = 0.147112646040717, },
+				ApplyMode = Input { Value = FuID { "Hypotenuse" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 261.777, -139.711 } },
+		},
+		["空背景"] = Background {
+			NameSet = true,
+			Inputs = {
+				GlobalOut = Input { Value = 239, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				TopLeftAlpha = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 69.3429, -139.711 } },
+		},
+		Merge1_1_1 = Merge {
+			Inputs = {
+				Background = Input {
+					SourceOp = "空背景",
+					Source = "Output",
+				},
+				Foreground = Input {
+					SourceOp = "Instance_Transform1_1_1",
+					Source = "Output",
+				},
+				Center = Input { Value = { 0.381204452860504, 0.597265664069248 }, },
+				Size = Input { Value = 0.147112646040717, },
+				ApplyMode = Input { Value = FuID { "Hypotenuse" }, },
+				PerformDepthMerge = Input { Value = 0, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 491.432, -139.711 } },
+		},
+		Instance_Transform1_1_1 = Transform {
+			SourceOp = "位置动画",
+			Inputs = {
+				SettingsNest = Input {
+				},
+				TransformNest = Input {
+				},
+				ReferenceSize = Input {
+				},
+				Input = Input {
+					SourceOp = "ColorCorrector1",
+					Source = "Output",
+				},
+				CommentsNest = Input {
+				},
+				FrameRenderScriptNest = Input {
+				},
+				StartRenderScripts = Input {
+				},
+				EndRenderScripts = Input {
+				},
+				EffectMask = Input {
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 491.432, -183.053 } },
+		},
+		["位置动画"] = Transform {
+			NameSet = true,
+			Inputs = {
+				Center = Input {
+					SourceOp = "Path1_1",
+					Source = "Position",
+				},
+				Angle = Input {
+					SourceOp = "位置动画角度",
+					Source = "Value",
+				},
+				Input = Input {
+					SourceOp = "ColorCorrector1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 261.777, -248.217 } },
+		},
+		ColorCorrector1 = ColorCorrector {
+			Inputs = {
+				WheelTintAngle1 = Input { Value = 0.0978266471338687, },
+				WheelTintLength1 = Input { Value = 0.1009, },
+				ColorRanges = Input {
+					Value = ColorCurves {
+						Curves = {
+							{
+								Points = {
+									{ 0, 1 },
+									{ 0.4, 0.2 },
+									{ 0.6, 0 },
+									{ 1, 0 }
+								}
+							},
+							{
+								Points = {
+									{ 0, 0 },
+									{ 0.4, 0 },
+									{ 0.6, 0.2 },
+									{ 1, 1 }
+								}
+							}
+						}
+					},
+				},
+				HistogramIgnoreTransparent = Input { Value = 1, },
+				Input = Input {
+					SourceOp = "眼泪",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 766.565, -248.217 } },
+		},
+		["眼泪"] = Loader {
+			Clips = {
+				Clip {
+					ID = "Clip1",
+					Filename = "setting:Media/tra.png",
+					FormatID = "PNGFormat",
+					StartFrame = -1,
+					LengthSetManually = true,
+					TrimIn = 0,
+					TrimOut = 0,
+					ExtendFirst = 0,
+					ExtendLast = 0,
+					Loop = 0,
+					AspectMode = 0,
+					Depth = 0,
+					TimeCode = 0,
+					GlobalStart = 0,
+					GlobalEnd = 0
+				}
+			},
+			CtrlWZoom = false,
+			Inputs = {
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 768.451, -316.05 } },
+		},
+	}
+}

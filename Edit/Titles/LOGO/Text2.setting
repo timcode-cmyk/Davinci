@@ -1,0 +1,40 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			CtrlWZoom = false,
+			NameSet = true,
+			Inputs = {
+				GlobalOut = Input { Value = 152, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				SelectElement = Input { Value = 2, },
+				Select = Input { Value = 2, },
+				Enabled2 = Input { Value = 1, },
+				Enabled3 = Input { Value = 1, },
+				Type1 = Input { Value = 2, },
+				Blue1 = Input { Value = 0, },
+				ShadingGradient1 = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 1, 0.333333333333333, 0, 1 },
+							[0.676616915422886] = { 1, 1, 0, 1 }
+						}
+					},
+				},
+				Softness1 = Input { Value = 1, },
+				StyledText = Input { Value = "क्योंकि बहुत से लोग  धन और संसार\n को परमेश्वर से अधिक चाहते हैं। ", },
+				Font = Input { Value = "Sura", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1418, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Thickness2 = Input { Value = 0.0465, },
+				OutsideOnly2 = Input { Value = 1, },
+				Softness2 = Input { Value = 1, },
+				Softness3 = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 220, 49.5 } },
+		}
+	}
+}

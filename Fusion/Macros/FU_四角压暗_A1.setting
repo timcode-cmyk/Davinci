@@ -1,0 +1,220 @@
+{
+	Tools = ordered() {
+		["FU_四角压暗_A1"] = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "Merge22",
+					Source = "Background",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Background1_8_1",
+					Source = "Width",
+					Default = 1920,
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Background1_8_1",
+					Source = "Height",
+					Default = 1080,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Background1_8_1",
+					Source = "Depth",
+					Default = 0,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Level",
+					Name = "透明度",
+					Default = 1,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "SoftEdge",
+					Name = "羽化",
+					Default = 0.1262,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "BorderWidth",
+					Name = "扩展",
+					Default = 0,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Invert",
+					Name = "翻转",
+					Default = 1,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Solid",
+					Name = "填充",
+					Default = 1,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Center",
+					Name = "中心点",
+				},
+				Input10 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Width",
+					Name = "宽",
+					Default = 0.96853625171,
+				},
+				Input11 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Height",
+					Name = "高",
+					Default = 0.8272506082725,
+				},
+				Input12 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "CornerRadius",
+					Name = "圆滑度",
+					Default = 1,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "Rectangle1",
+					Source = "Angle",
+					Name = "角度",
+					Default = 0,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Merge22",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				Merge22 = Merge {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					CustomData = {
+						Settings = {
+							[1] = {
+								Tools = ordered() {
+									Merge22 = Merge {
+										Inputs = {
+											Foreground = Input {
+												SourceOp = "Background1_8_1",
+												Source = "Output"
+											},
+											Background = Input {
+												SourceOp = "XfChromaFuse1",
+												Source = "Output"
+											},
+											PerformDepthMerge = Input { Value = 0 }
+										},
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 5474.49, -227.798 } },
+										CustomData = {
+										}
+									}
+								}
+							}
+						}
+					},
+					Inputs = {
+						Foreground = Input {
+							SourceOp = "Background1_8_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 5474.49, -227.798 } },
+				},
+				Background1_8_1 = Background {
+					ExtentSet = true,
+					CtrlWShown = false,
+					CurrentSettings = 3,
+					CustomData = {
+						Settings = {
+							[1] = {
+								Tools = ordered() {
+									Background1_8_1 = Background {
+										Inputs = {
+											TopLeftBlue = Input { Value = 1 },
+											["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" } },
+											GlobalIn = Input { Value = 260 },
+											TopLeftRed = Input { Value = 1 },
+											GlobalOut = Input { Value = 455 },
+											TopLeftGreen = Input { Value = 1 },
+											Height = Input { Value = 1080 },
+											Width = Input { Value = 1920 }
+										},
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 5474.49, -270.07 } },
+										CustomData = {
+										}
+									}
+								}
+							},
+							[2] = {
+								Tools = ordered() {
+									Background1_8 = Background {
+										Inputs = {
+											Height = Input { Value = 1080 },
+											["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" } },
+											TopLeftAlpha = Input { Value = 0 },
+											Width = Input { Value = 1920 }
+										},
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 1487.56, -571.586 } },
+										CustomData = {
+										}
+									}
+								}
+							},
+							[3] = {
+								Tools = ordered() {
+									Background1_8_1 = Background {
+										Inputs = {
+											Height = Input { Value = 1080 },
+											["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" } },
+											Width = Input { Value = 1920 }
+										},
+										Name = "Background1_8_1",
+										CtrlWZoom = false,
+										ViewInfo = OperatorInfo { Pos = { 935.846, 242.757 } },
+										CustomData = {
+										}
+									}
+								}
+							}
+						}
+					},
+					Inputs = {
+						GlobalOut = Input { Value = 20000, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						EffectMask = Input {
+							SourceOp = "Rectangle1",
+							Source = "Mask",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 5474.49, -270.07 } },
+				},
+				Rectangle1 = RectangleMask {
+					CtrlWShown = false,
+					Inputs = {
+						SoftEdge = Input { Value = 0.1262, },
+						Invert = Input { Value = 1, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Width = Input { Value = 0.96853625171, },
+						Height = Input { Value = 0.8272506082725, },
+						CornerRadius = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 5474.49, -303.07 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "FU_四角压暗_A1"
+}

@@ -1,0 +1,299 @@
+{
+	Tools = ordered() {
+		["翻页动画"] = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "ImagePlane3D1",
+					Source = "MaterialInput",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "ImagePlane3D1",
+					Source = "Transform3DOp.Rotate.X",
+					Name = "X轴",
+					Default = 0,
+				},
+				Input2 = InstanceInput {
+					SourceOp = "ImagePlane3D1",
+					Source = "Transform3DOp.Rotate.Y",
+					Name = "Y轴",
+					Default = 0,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "ImagePlane3D1",
+					Source = "Transform3DOp.Rotate.Z",
+					Name = "Z轴",
+					Default = 30,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "ImagePlane3D1",
+					Source = "Transform3DOp.ScaleLock",
+					Default = 1,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "ImagePlane3D1",
+					Source = "Transform3DOp.Scale.X",
+					Name = "缩放",
+					Default = 2.946,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Bender",
+				},
+				Input7 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Amount",
+					Default = 1,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Axis",
+					Default = 0,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Angle",
+					Default = 90,
+				},
+				Input10 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "Center",
+					Default = 0.5,
+				},
+				Input11 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "RangeMin",
+					Name = "最小值",
+					ControlGroup = 12,
+					Default = 0,
+				},
+				Input12 = InstanceInput {
+					SourceOp = "Bender3D1",
+					Source = "RangeMax",
+					Name = "最大值",
+					ControlGroup = 12,
+					Default = 1,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "Transform3D1",
+					Source = "Transform3DOp.Rotate.X",
+					Name = "X轴",
+					Default = 0,
+				},
+				Input14 = InstanceInput {
+					SourceOp = "Transform3D1",
+					Source = "Transform3DOp.Rotate.Y",
+					Name = "Y轴",
+					Default = 0,
+				},
+				Input15 = InstanceInput {
+					SourceOp = "Transform3D1",
+					Source = "Transform3DOp.Rotate.Z",
+					Name = "Z轴",
+					Default = -30,
+				},
+				Input16 = InstanceInput {
+					SourceOp = "Transform3D1",
+					Source = "Transform3DOp.ScaleLock",
+					Default = 1,
+				},
+				Input17 = InstanceInput {
+					SourceOp = "Transform3D1",
+					Source = "Transform3DOp.Scale.X",
+					Name = "缩放",
+					Default = 1,
+				},
+				Input18 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "ShadowOffset",
+				},
+				Input19 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "Softness",
+					Default = 0.05,
+				},
+				Input20 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "Red",
+					Name = "阴影颜色",
+					ControlGroup = 20,
+					Default = 0.0823529411765,
+				},
+				Input21 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "Green",
+					Name = "阴影颜色",
+					ControlGroup = 20,
+					Default = 0.0823529411765,
+				},
+				Input22 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "Blue",
+					Name = "阴影颜色",
+					ControlGroup = 20,
+					Default = 0.0823529411765,
+				},
+				Input23 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "Alpha",
+					Name = "阴影颜色",
+					ControlGroup = 20,
+					Default = 0.795,
+				},
+				Input24 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "LightPosition",
+					DefaultX = 0.424,
+					DefaultY = 1.952,
+				},
+				Input25 = InstanceInput {
+					SourceOp = "Shadow1",
+					Source = "LightDistance",
+					Default = 0.9,
+				},
+				MainInput2 = InstanceInput {
+					SourceOp = "Merge1",
+					Source = "Background",
+				},
+			},
+			Outputs = {
+				Output1 = InstanceOutput {
+					SourceOp = "Bender3D1中心",
+					Source = "Value",
+				},
+				Output2 = InstanceOutput {
+					SourceOp = "Bender3D1最小范围值",
+					Source = "Value",
+				},
+				Output3 = InstanceOutput {
+					SourceOp = "Bender3D1最大范围值",
+					Source = "Value",
+				},
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Merge1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				ImagePlane3D1 = ImagePlane3D {
+					Inputs = {
+						["Transform3DOp.Rotate.Z"] = Input { Value = 30, },
+						["Transform3DOp.Scale.X"] = Input { Value = 2.946, },
+						["SurfacePlaneInputs.Visibility.Nest"] = Input { Value = 1, },
+						["SurfacePlaneInputs.Lighting.Nest"] = Input { Value = 1, },
+						["SurfacePlaneInputs.ObjectID.ObjectID"] = Input { Value = 1, },
+						["MtlStdInputs.MaterialID"] = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -330, 149.357 } },
+				},
+				Bender3D1 = Bender3D {
+					Inputs = {
+						SceneInput = Input {
+							SourceOp = "ImagePlane3D1",
+							Source = "Output",
+						},
+						Amount = Input { Value = 1, },
+						Axis = Input { Value = 0, },
+						Angle = Input { Value = 90, },
+						Center = Input {
+							SourceOp = "Bender3D1中心",
+							Source = "Value",
+						},
+						RangeMin = Input {
+							SourceOp = "Bender3D1最小范围值",
+							Source = "Value",
+						},
+						RangeMax = Input {
+							SourceOp = "Bender3D1最大范围值",
+							Source = "Value",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -220, 149.357 } },
+				},
+				["Bender3D1中心"] = BezierSpline {
+					SplineColor = { Red = 251, Green = 22, Blue = 4 },
+					CtrlWZoom = false,
+					NameSet = true,
+					KeyFrames = {
+						[16.9184611393855] = { 0, RH = { 18.6103072533241, -0.0333333333333333 }, Flags = { Linear = true } },
+						[21.9939994812012] = { -0.1, LH = { 20.3021533672626, -0.0666666666666667 }, Flags = { Linear = true } }
+					}
+				},
+				["Bender3D1最小范围值"] = BezierSpline {
+					SplineColor = { Red = 213, Green = 53, Blue = 64 },
+					CtrlWZoom = false,
+					NameSet = true,
+					KeyFrames = {
+						[0] = { 1, RH = { 7.33133316040039, 0.666666666666667 }, Flags = { Linear = true } },
+						[21.9939994812012] = { 0, LH = { 14.6626663208008, 0.333333333333333 }, Flags = { Linear = true } }
+					}
+				},
+				["Bender3D1最大范围值"] = BezierSpline {
+					SplineColor = { Red = 210, Green = 210, Blue = 0 },
+					CtrlWZoom = false,
+					NameSet = true,
+					KeyFrames = {
+						[0] = { 1, RH = { 7.33133316040039, 1 }, Flags = { Linear = true } },
+						[21.9939994812012] = { 1, LH = { 14.6626663208008, 1 }, Flags = { Linear = true } }
+					}
+				},
+				Transform3D1 = Transform3D {
+					Inputs = {
+						SceneInput = Input {
+							SourceOp = "Bender3D1",
+							Source = "Output",
+						},
+						["Transform3DOp.Rotate.Z"] = Input { Value = -30, },
+						["Transform3DOp.PivotNest"] = Input { Value = 1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -110, 149.357 } },
+				},
+				Renderer3D1 = Renderer3D {
+					CustomData = {
+						ToolVersion = 2,
+					},
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						SceneInput = Input {
+							SourceOp = "Transform3D1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 0, 149.357 } },
+				},
+				Shadow1 = Shadow {
+					Inputs = {
+						ShadowOffset = Input { Value = { 0.545, 0.602 }, },
+						Softness = Input { Value = 0.05, },
+						Red = Input { Value = 0.0823529411765, },
+						Green = Input { Value = 0.0823529411765, },
+						Blue = Input { Value = 0.0823529411765, },
+						Alpha = Input { Value = 0.795, },
+						LightPosition = Input { Value = { 0.424, 1.952 }, },
+						LightDistance = Input { Value = 0.9, },
+						Input = Input {
+							SourceOp = "Renderer3D1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 149.357 } },
+				},
+				Merge1 = Merge {
+					CtrlWZoom = false,
+					Inputs = {
+						Foreground = Input {
+							SourceOp = "Shadow1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 149.357 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "翻页动画"
+}

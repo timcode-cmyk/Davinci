@@ -1,0 +1,282 @@
+{
+	Tools = ordered() {
+		Blur1_5 = Blur {
+			Inputs = {
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				XBlurSize = Input { Value = 14.2, },
+				Input = Input {
+					SourceOp = "MediaIn2_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 4629.91, -1022.72 } },
+		},
+		MediaIn2_1 = MediaIn {
+			CustomData = { MEDIA_ID = "e1a63d2d-5a23-4dc1-8fe0-7dffcaa7ad83", MediaProps = { MEDIA_NUM_LAYERS = 0, MEDIA_FORMAT_TYPE = "PNG", MEDIA_PAR = 1, MEDIA_LAYER_DESC = {
+					}, MEDIA_NAME = "piccrew_An_open_book_with_several_pages_stuck_in_the_middle_top_5263e2c9-95e8-4006-9b9c-5b2bd92d1c4d.png", MEDIA_PATH = "/Users/liutao/Movies/Project Files/1月/20240103-LT-天国钥匙-可多人用/sucai/piccrew_An_open_book_with_several_pages_stuck_in_the_middle_top_5263e2c9-95e8-4006-9b9c-5b2bd92d1c4d.png", MEDIA_START_FRAME = 0, MEDIA_IS_SOURCE_RES = true, MEDIA_SRC_FRAME_RATE = 24, MEDIA_MARK_OUT = 0, MEDIA_WIDTH = 1024, MEDIA_NUM_FRAMES = 1, MEDIA_MARK_IN = 0, MEDIA_HEIGHT = 1024 }, },
+			Inputs = {
+				GlobalOut = Input { Value = 359, },
+				MediaSource = Input { Value = FuID { "MediaPool" }, },
+				MediaID = Input { Value = "e1a63d2d-5a23-4dc1-8fe0-7dffcaa7ad83", },
+				AudioTrack = Input { Value = FuID { "Timeline Audio" }, },
+				Layer = Input {
+					Value = Text {
+					},
+				},
+				ClipTimeEnd = Input { Value = 0, },
+				Loop = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				LeftAudio = Input {
+					SourceOp = "Left",
+					Source = "Data",
+				},
+				RightAudio = Input {
+					SourceOp = "Right",
+					Source = "Data",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 4629.91, -1065.67 } },
+			Version = 1
+		},
+		Left = AudioDisplay {
+		},
+		Right = AudioDisplay {
+			CtrlWZoom = false,
+		},
+		Transform1 = Transform {
+			Inputs = {
+				Size = Input { Value = 0.235602094240838, },
+				Edges = Input { Value = 3, },
+				Input = Input {
+					SourceOp = "Blur1_5",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 4629.91, -990.187 } },
+		},
+		Text3D2 = Text3D {
+			Inputs = {
+				LayoutRotation = Input { Value = 1, },
+				TransformRotation = Input { Value = 1, },
+				StyledText = Input { Value = "ertyk", },
+				Font = Input { Value = "Plantagenet Cherokee", },
+				Style = Input { Value = "Regular", },
+				VerticalTopCenterBottom = Input { Value = 1, },
+				VerticalJustification = Input { Value = 3, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Extrusion = Input { Value = 1, },
+				ExtrusionStyle = Input { Value = 1, },
+				ExtrusionProfile = Input {
+					SourceOp = "Text3D2挤压侧面轮廓",
+					Source = "Value",
+				},
+				ExtrusionDepth = Input { Value = 0.148, },
+				ExtrusionSubdivisions = Input { Value = 3, },
+				BevelDepth = Input { Value = 0.0205, },
+				BevelWidth = Input { Value = 0.0252, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4800.37, -1016.19 } },
+		},
+		["Text3D2挤压侧面轮廓"] = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.0196116135138184, 0.098058067569092 }, Flags = { Linear = true } },
+					[0.2] = { 0.837037037037037, LH = { 0.128230563504664, 0.756715812766289 }, RH = { 0.284092481002886, 0.931149675451794 } },
+					[0.832085561497326] = { 0.881481481481482, LH = { 0.761621915052549, 0.94155721973663 }, RH = { 0.890260045840747, 0.831883209594111 } },
+					[1] = { 0, LH = { 0.944028520499109, 0.281930415263749 } }
+				}
+			},
+			SplineColor = { Red = 192, Green = 128, Blue = 64 },
+			CtrlWZoom = false,
+			NameSet = true,
+		},
+		Text3D1 = Text3D {
+			Inputs = {
+				LayoutRotation = Input { Value = 1, },
+				TransformRotation = Input { Value = 1, },
+				StyledText = Input { Value = "TEXT", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				VerticalTopCenterBottom = Input { Value = 1, },
+				VerticalJustification = Input { Value = 3, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Extrusion = Input { Value = 1, },
+				ExtrusionStyle = Input { Value = 1, },
+				ExtrusionProfile = Input {
+					SourceOp = "Text3D1挤压侧面轮廓",
+					Source = "Value",
+				},
+				ExtrusionDepth = Input { Value = 0.2, },
+				BevelWidth = Input { Value = 0.0252, },
+				AdvancedFontControls = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4800.37, -988.346 } },
+		},
+		["Text3D1挤压侧面轮廓"] = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0, RH = { 0.0169897400494042, 0.0849487002470209 }, Flags = { Linear = true } },
+					[0.173262032085562] = { 0.762962962962963, LH = { 0.094882794815463, 0.741245667631604 }, RH = { 0.315596583068058, 0.802400977253553 } },
+					[0.816042780748663] = { 0.762962962962963, LH = { 0.653499670017987, 0.807166992762485 }, RH = { 0.891045351461453, 0.742565815056014 } },
+					[1] = { 0, LH = { 0.938680926916221, 0.306595365418895 } }
+				}
+			},
+			SplineColor = { Red = 192, Green = 128, Blue = 64 },
+			CtrlWZoom = false,
+		},
+		Camera3D3 = Camera3D {
+			Inputs = {
+				["Transform3DOp.Translate.Y"] = Input { Value = 0.189048739831334, },
+				["Transform3DOp.Translate.Z"] = Input { Value = 7.01403753401287, },
+				AoV = Input { Value = 33.0828390256932, },
+				FLength = Input { Value = 20, },
+				["Stereo.Mode"] = Input { Value = FuID { "Mono" }, },
+				FilmGate = Input { Value = FuID { "BMD_URSA_4K_16x9" }, },
+				ApertureW = Input { Value = 0.831496062992126, },
+				ApertureH = Input { Value = 0.467716535433071, },
+				["SurfacePlaneInputs.ObjectID.ObjectID"] = Input { Value = 8, },
+				["MtlStdInputs.MaterialID"] = Input { Value = 8, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4962.76, -954.327 } },
+		},
+		SphereMap1 = SphereMap {
+			Inputs = {
+				MapMode = Input { Value = 1, },
+				Rotation = Input { Value = 1, },
+				Image = Input {
+					SourceOp = "Transform1",
+					Source = "Output",
+				},
+				MaterialID = Input { Value = 5, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4629.91, -941.022 } },
+		},
+		Merge3D3 = Merge3D {
+			Inputs = {
+				SceneInput1 = Input {
+					SourceOp = "ReplaceMaterial3D1",
+					Source = "Output",
+				},
+				SceneInput2 = Input {
+					SourceOp = "Camera3D3",
+					Source = "Output",
+				},
+				SceneInput3 = Input {
+					SourceOp = "SpotLight1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 4962.76, -893.905 } },
+		},
+		ReplaceMaterial3D1 = ReplaceMaterial3D {
+			Inputs = {
+				SceneInput = Input {
+					SourceOp = "Text3D2",
+					Source = "Output",
+				},
+				MaterialInput = Input {
+					SourceOp = "Reflect1_1",
+					Source = "MaterialOutput",
+				},
+				["MtlStdInputs.MaterialID"] = Input { Value = 3, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4800.37, -893.905 } },
+		},
+		Reflect1_1 = MtlReflect {
+			Inputs = {
+				BackgroundMaterial = Input {
+					SourceOp = "Ward1",
+					Source = "MaterialOutput",
+				},
+				["Reflection.FaceOnStrength"] = Input { Value = 0.717, },
+				["Reflection.Falloff"] = Input { Value = 0.094, },
+				["Reflection.Color.Material"] = Input {
+					SourceOp = "SphereMap1",
+					Source = "MaterialOutput",
+				},
+				MaterialID = Input { Value = 4, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4629.91, -893.905 } },
+		},
+		Ward1 = MtlWard {
+			Inputs = {
+				["Diffuse.Color.Green"] = Input { Value = 0.620095999999998, },
+				["Diffuse.Color.Blue"] = Input { Value = 0.104, },
+				["Specular.Nest"] = Input { Value = 1, },
+				["Transmittance.Nest"] = Input { Value = 1, },
+				MaterialID = Input { Value = 6, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4488.26, -893.905 } },
+		},
+		Renderer3D3 = Renderer3D {
+			CustomData = { ToolVersion = 2, },
+			Inputs = {
+				GlobalOut = Input { Value = 359, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				SceneInput = Input {
+					SourceOp = "Merge3D3",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 5121.77, -893.905 } },
+		},
+		SpotLight1 = LightSpot {
+			Inputs = {
+				["Transform3DOp.Translate.X"] = Input { Value = 1.90968570339941, },
+				["Transform3DOp.Translate.Y"] = Input { Value = -2.27083118740428, },
+				["Transform3DOp.Translate.Z"] = Input { Value = 2.92232207593993, },
+				["Transform3DOp.Rotate.X"] = Input { Value = 18.3, },
+				["Transform3DOp.Rotate.Y"] = Input { Value = 39.1, },
+				Intensity = Input { Value = 3, },
+				ConeAngle = Input { Value = 90, },
+				PenumbraAngle = Input { Value = 14.33, },
+				Dropoff = Input { Value = 0, },
+				["ShadowLightInputs3D.ShadowsEnabled"] = Input { Value = 1, },
+				["ShadowLightInputs3D.ShadowMapSize"] = Input { Value = 2048, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 4961.72, -837.218 } },
+		},
+		ColorCorrector4 = ColorCorrector {
+			CtrlWZoom = false,
+			Inputs = {
+				WheelSaturation1 = Input { Value = 1.11, },
+				MasterRGBGain = Input { Value = 1.13, },
+				MasterRGBGamma = Input { Value = 1.35, },
+				ColorRanges = Input {
+					Value = ColorCurves {
+						Curves = {
+							{
+								Points = {
+									{ 0, 1 },
+									{ 0.4, 0.2 },
+									{ 0.6, 0 },
+									{ 1, 0 }
+								}
+							},
+							{
+								Points = {
+									{ 0, 0 },
+									{ 0.4, 0 },
+									{ 0.6, 0.2 },
+									{ 1, 1 }
+								}
+							}
+						}
+					},
+				},
+				HistogramIgnoreTransparent = Input { Value = 1, },
+				Input = Input {
+					SourceOp = "Renderer3D3",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 5253.12, -893.905 } },
+		}
+	},
+	ActiveTool = "ColorCorrector4"
+}

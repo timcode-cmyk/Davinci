@@ -1,0 +1,1231 @@
+{
+	Tools = ordered() {
+		ScrollText01 = GroupOperator {
+			Inputs = ordered() {
+				Comments = Input { Value = "NEWS Templates", },
+				Label0 = InstanceInput {
+					SourceOp = "T",
+					Source = "Label0",
+				},
+				Input42 = InstanceInput {
+					SourceOp = "SCALE",
+					Source = "Center",
+					Name = "位置",
+				},
+				Input43 = InstanceInput {
+					SourceOp = "SCALE",
+					Source = "Size",
+					Default = 1,
+				},
+				
+				Input11 = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "RollSpeed",
+					Name = "滚动速度",
+					Page = "Controls",
+					Default = 0.5,
+				},
+				Input12 = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "Offset",
+					Name = "前置偏移",
+					Page = "Controls",
+					Default = 0.5,
+				},
+				Input100 = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "RollLoop",
+					Name = "是否循环",
+					Page = "Controls",
+					Default = 1,
+				},
+				Loop = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "Loop",
+					Expression = "RollLoop == 1 and 1 or 0",
+				},
+				Input10 = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "Gap",
+					Name = "循环间隔",
+					Page = "Controls",
+					Default = 0.045,
+				},
+
+
+				Label1 = InstanceInput {
+					SourceOp = "T",
+					Source = "Label1",
+				},
+				Input14 = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "Speed",
+					Name = "速度",
+					Page = "Controls",
+					Default = 1,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "CTRL",
+					Source = "OutAnimation",
+					Name = "出场动画",
+					Page = "Controls",
+					Default = 1,
+				},
+				Label2 = InstanceInput {
+					SourceOp = "T",
+					Source = "Label2",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "T",
+					Source = "StyledText",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "T",
+					Source = "Font",
+					ControlGroup = 2,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "T",
+					Source = "Style",
+					ControlGroup = 2,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "T",
+					Source = "Red1Clone",
+					Name = "颜色",
+					ControlGroup = 3,
+					Default = 0.094,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "T",
+					Source = "Green1Clone",
+					ControlGroup = 3,
+					Default = 0.094,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "T",
+					Source = "Blue1Clone",
+					ControlGroup = 3,
+					Default = 0.094,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "T",
+					Source = "Alpha1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "T",
+					Source = "Size",
+					Default = 0.035,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "T",
+					Source = "CharacterSpacingClone",
+					Default = 1,
+				},
+				Input3200 = InstanceInput {
+					SourceOp = "XYPath1",
+					Source = "Y",
+					Name = "文字位置",
+				},
+				Input19 = InstanceInput {
+					SourceOp = "Text_Bg_Mask",
+					Source = "Center",
+					Name = "位置",
+				},
+				Input20 = InstanceInput {
+					SourceOp = "Text_Bg_Mask",
+					Source = "BarHeight",
+					Name = "高度",
+					Page = "Controls",
+					Default = 0.075,
+				},
+				Label3 = InstanceInput {
+					SourceOp = "T",
+					Source = "Label3",
+				},
+				Input31 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "StyledText",
+				},
+				Input32 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Font",
+					ControlGroup = 22,
+				},
+				Input33 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Style",
+					ControlGroup = 22,
+				},
+				Input34 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Red1Clone",
+					Name = "颜色",
+					ControlGroup = 23,
+					Default = 1,
+				},
+				Input35 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Green1Clone",
+					ControlGroup = 23,
+					Default = 1,
+				},
+				Input36 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Blue1Clone",
+					ControlGroup = 23,
+					Default = 1,
+				},
+				Input37 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Alpha1Clone",
+					ControlGroup = 23,
+					Default = 1,
+				},
+				Input38 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Size",
+					Default = 0.07,
+				},
+				Input39 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "CharacterSpacingClone",
+					Default = 1,
+				},
+				Input40 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "LineSpacingClone",
+					Default = 1,
+				},
+				Input41 = InstanceInput {
+					SourceOp = "R_T",
+					Source = "Center",
+					Name = "字符位置",
+				},
+				Input27 = InstanceInput {
+					SourceOp = "R",
+					Source = "Width",
+					Default = 0.15,
+				},
+				Input28 = InstanceInput {
+					SourceOp = "R",
+					Source = "CornerRadius",
+					Name = "圆角",
+					Default = 0,
+				},
+				Input29 = InstanceInput {
+					SourceOp = "R",
+					Source = "BoxHeight",
+					Name = "高度",
+					Page = "Controls",
+					Default = 0.12,
+				},
+				Input30 = InstanceInput {
+					SourceOp = "POS",
+					Source = "Center",
+					Name = "整体位置",
+				},
+				Label4 = InstanceInput {
+					SourceOp = "T",
+					Source = "Label4",
+				},
+				Input1600 = InstanceInput {
+					SourceOp = "Merge5",
+					Source = "ShowBackground",
+					Name = "显示背景",
+					Page = "Controls",
+					Default = 1,
+				},
+				Input21 = InstanceInput {
+					SourceOp = "M_W",
+					Source = "BlendClone",
+					Name = "网点透明度",
+					Default = 0.2,
+				},
+				Input22 = InstanceInput {
+					SourceOp = "BG_COLOR",
+					Source = "TopLeftRed",
+					Name = "颜色",
+					ControlGroup = 15,
+					Default = 0.9254901960784,
+				},
+				Input23 = InstanceInput {
+					SourceOp = "BG_COLOR",
+					Source = "TopLeftGreen",
+					ControlGroup = 15,
+					Default = 0.9254901960784,
+				},
+				Input24 = InstanceInput {
+					SourceOp = "BG_COLOR",
+					Source = "TopLeftBlue",
+					ControlGroup = 15,
+					Default = 0.9254901960784,
+				},
+				Input25 = InstanceInput {
+					SourceOp = "BG_COLOR",
+					Source = "TopLeftAlpha",
+					ControlGroup = 15,
+					Default = 1,
+				},
+				Label5 = InstanceInput {
+					SourceOp = "T",
+					Source = "Label5",
+				},
+				Input15 = InstanceInput {
+					SourceOp = "BG_COLOR_2",
+					Source = "TopLeftRed",
+					Name = "颜色",
+					ControlGroup = 11,
+					Default = 0.6901960784314,
+				},
+				Input16 = InstanceInput {
+					SourceOp = "BG_COLOR_2",
+					Source = "TopLeftGreen",
+					ControlGroup = 11,
+					Default = 0.1647058823529,
+				},
+				Input17 = InstanceInput {
+					SourceOp = "BG_COLOR_2",
+					Source = "TopLeftBlue",
+					ControlGroup = 11,
+					Default = 0.1647058823529,
+				},
+				Input18 = InstanceInput {
+					SourceOp = "BG_COLOR_2",
+					Source = "TopLeftAlpha",
+					ControlGroup = 11,
+					Default = 1,
+				},
+				COLA = InstanceInput {
+					SourceOp = "BG_COLOR_2",
+					Source = "COLA",
+					Width = 0.5,
+					Page = "Controls",
+				},
+				TAOBAO = InstanceInput {
+					SourceOp = "BG_COLOR_2",
+					Source = "TAOBAO",
+					Width = 0.5,
+					Page = "Controls",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "SCALE",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo {
+				Pos = { 220, 49.5 },
+				Flags = {
+					AllowPan = false,
+					AutoSnap = true,
+					RemoveRouters = true
+				},
+				Size = { 1061, 427.886, 530.5, 24.2424 },
+				Direction = "Horizontal",
+				PipeStyle = "Direct",
+				Scale = 1,
+				Offset = { 0, 0 }
+			},
+			Tools = ordered() {
+				T = TextPlus {
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Center = Input {
+							Value = { 0, 0.105 },
+							Expression = "Point(0.0, Text_Bg_Mask.Center.Y)",
+						},
+						Red1 = Input { Value = 0.094, },
+						Green1 = Input { Value = 0.094, },
+						Blue1 = Input { Value = 0.094, },
+						StyledText = Input { Value = "NEWS Templates, compatible with DaVinci Resolve 18", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Semibold", },
+						Size = Input { Value = 0.035, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 27, 139.258 } },
+					UserControls = ordered() {
+						Label0 = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 7,
+							INP_Default = 1,
+							LINKS_Name = "设置",
+						},
+						Label1 = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 2,
+							INP_Default = 1,
+							LINKS_Name = "动画",
+						},
+						Label2 = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 12,
+							INP_Default = 1,
+							LINKS_Name = "滚动标题样式",
+						},
+						Label3 = {
+							LBLC_NumInputs = 15,
+							INPID_InputControl = "LabelControl",
+							LBLC_DropDownButton = true,
+							LINKS_Name = "小标题样式",
+						},
+						Label4 = {
+							LBLC_NumInputs = 6,
+							INPID_InputControl = "LabelControl",
+							LBLC_DropDownButton = true,
+							LINKS_Name = "滚动标题背景",
+						},
+						Label5 = {
+							LBLC_NumInputs = 4,
+							INPID_InputControl = "LabelControl",
+							LBLC_DropDownButton = true,
+							LINKS_Name = "小标题背景",
+						}
+					}
+				},
+				CTRL = Custom {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						NumberIn1 = Input { Expression = "comp:GetPrefs(\"Comp.FrameFormat.Width\")", },
+						NumberIn2 = Input { Expression = "comp:GetPrefs(\"Comp.FrameFormat.Height\")", },
+						NumberIn3 = Input { Expression = "comp:GetPrefs(\"Comp.FrameFormat.Rate\")", },
+						NumberIn4 = Input { Expression = "NumberIn1 / NumberIn2", },
+						NumberIn5 = Input { Expression = "Speed == 0 and 1 or (time-comp.RenderStart)/CTRL.NumberIn3 > (Speed*(OutAnimation == 1 and 2 or 1))\n and 1 or ((time-comp.RenderStart)/CTRL.NumberIn3/(Speed*(OutAnimation == 1 and 2 or 1)))", },
+						NumberIn6 = Input { Expression = "(T.Output[0].DataWindow[3]-T.Output[0].DataWindow[1])/T.Output[0].Width", },
+						LUTIn1 = Input {
+							SourceOp = "CTRLLUTIn1",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "CTRLLUTIn2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "CTRLLUTIn3",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "CTRLLUTIn4",
+							Source = "Value",
+						},
+						NumberControls = Input { Value = 1, },
+						NameforNumber1 = Input { Value = "Width", },
+						NameforNumber2 = Input { Value = "Height", },
+						NameforNumber3 = Input { Value = "Ratio", },
+						NameforNumber4 = Input { Value = "Frame", },
+						NameforNumber5 = Input { Value = "Animation", },
+						NameforNumber6 = Input { Value = "Roll Text Width", },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						PointControls = Input { Value = 1, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						LUTControls = Input { Value = 1, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						Gap = Input { Value = 0.045, },
+						Offset = Input { Value = 0.5, },
+						DotmapBackground = Input { Value = 0, },
+						Loop = Input { Expression = "RollLoop == 1 and 1 or 0", },
+					},
+					ViewInfo = OperatorInfo { Pos = { -468, 205.258 } },
+					UserControls = ordered() {
+						Gap = {
+							INP_MaxAllowed = 1,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 1,
+							INP_Default = 0.0500000007450581,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Gap"
+						},
+						RollSpeed = {
+							INP_MaxAllowed = 5,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 1,
+							INP_Default = 0.5,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Roll Speed"
+						},
+						Offset = {
+							INP_MaxAllowed = 100,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 1,
+							INP_Default = 0,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Offset"
+						},
+						OutAnimation = {
+							INP_MaxAllowed = 1,
+							INP_Integer = true,
+							INPID_InputControl = "CheckboxControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							CBC_TriState = false,
+							LINKS_Name = "Out Animation"
+						},
+						Speed = {
+							INP_MaxAllowed = 20,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 10,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Animation Speed"
+						},
+						DotmapBackground = {
+							INP_MaxAllowed = 1,
+							INP_Integer = true,
+							INPID_InputControl = "CheckboxControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							CBC_TriState = false,
+							LINKS_Name = "Dotmap Background"
+						},
+						RollLoop = {
+							LINKS_Name = "Roll Loop",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_Default = 1,
+							INP_Integer = true,
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_MinAllowed = 0,
+							INP_MaxAllowed = 1,
+							CBC_TriState = false,
+							ICS_ControlPage = "Controls"
+						},
+						Loop = {
+							LBLC_NumInputs = 1,
+							IC_Visible = false,
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+						},
+					}
+				},
+				CTRLLUTIn1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWZoom = false,
+				},
+				CTRLLUTIn2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWZoom = false,
+				},
+				CTRLLUTIn3 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWZoom = false,
+				},
+				CTRLLUTIn4 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWZoom = false,
+				},
+				T_Roll = TextPlus {
+					CtrlWShown = false,
+					NameSet = true,
+					SourceOp = "T",
+					Inputs = {
+						EffectMask = Input { },
+						SettingsNest = Input { },
+						ImageNest = Input { },
+						["Gamut.ColorSpaceNest"] = Input { },
+						["Gamut.GammaSpaceNest"] = Input { },
+						Layout = Input { },
+						Center = Input {
+							Value = { 0, 0.105 },
+							Expression = "Point(0.0, Text_Bg_Mask.Center.Y)"
+						},
+						LayoutRotation = Input { },
+						Background = Input { },
+						TransformTransform = Input { },
+						TransformRotation = Input { },
+						TransformShear = Input { },
+						TransformSize = Input { },
+						Properties1 = Input { },
+						Softness1 = Input { },
+						Position1 = Input { },
+						Rotation1 = Input { },
+						Shear1 = Input { },
+						Size1 = Input { },
+						TextText = Input { },
+						TabSpacing = Input { },
+						AdvancedFontControls = Input { },
+						ClearSelectedKerning = Input { },
+						ClearAllKerning = Input { },
+						ClearSelectedPlacement = Input { },
+						ClearAllPlacement = Input { },
+						Internal = Input { },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { 137, 139.258 } },
+				},
+				CROP = Crop {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						XSize = Input {
+							Value = 1289,
+							Expression = "(CTRL.NumberIn6 + CTRL.Gap )* CTRL.NumberIn1",
+						},
+						YSize = Input {
+							Value = 1080,
+							Expression = "CTRL.NumberIn2",
+						},
+						Input = Input {
+							SourceOp = "T_Roll",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 137, 172.258 } },
+				},
+				Merge2 = Merge {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Text_Bg_Mask",
+							Source = "Mask",
+						},
+						Background = Input {
+							SourceOp = "BG",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge5",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -138, 237.723 } },
+				},
+				Offset_Mask = RectangleMask {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Text_Bg_Mask",
+							Source = "Mask",
+						},
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						PaintMode = Input { Value = FuID { "Minimum" }, },
+						Invert = Input { Value = 1, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input {
+							Value = { -0.7503125, 0.105 },
+							Expression = "Point( XYPath1.X - (CTRL.NumberIn6 + CTRL.Gap - CTRL.Offset) - 1, Text_Bg_Mask.Center.Y)",
+						},
+						Width = Input {
+							Value = 2.6715625,
+							Expression = "CTRL.NumberIn6 + CTRL.Gap + 2",
+						},
+						Height = Input {
+							Value = 0.075,
+							Expression = "Text_Bg_Mask.Height",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 137, 271.258 } },
+				},
+				Merge1 = Merge {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Offset_Mask",
+							Source = "Mask",
+						},
+						Background = Input {
+							SourceOp = "Merge2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "CROP",
+							Source = "Output",
+						},
+						Center = Input {
+							SourceOp = "XYPath1",
+							Source = "Value",
+						},
+						Edges = Input {
+							Value = 1,
+							Expression = "CTRL.RollLoop",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 137, 238.258 } },
+				},
+				XYPath1 = XYPath {
+					ShowKeyPoints = false,
+					DrawMode = "ModifyOnly",
+					CtrlWZoom = false,
+					Inputs = {
+						X = Input {
+							Value = 0.4075,
+							Expression = "-(CTRL.RollSpeed * time / 400) + 0.5",
+						},
+						Y = Input { Value = 0.5, },
+						Center = Input {
+							Value = { 1, 0.5 },
+							Expression = "Point(0.5 + CTRL.Offset, 0.5)",
+						},
+					},
+				},
+				BG = Background {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -468, 238.258 } },
+				},
+				BG_COLOR_2 = Background {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "R",
+							Source = "Mask",
+						},
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftRed = Input { Value = 0.6901960784314, },
+						TopLeftGreen = Input { Value = 0.1647058823529, },
+						TopLeftBlue = Input { Value = 0.1647058823529, },
+						GradientType = Input { Value = FuID { "Reflect" }, },
+						Start = Input { Value = { 0, 1 }, },
+						End = Input { Value = { 0.3, 0.5 }, },
+						Offset = Input {
+							Value = 0.126,
+							Expression = "time / 500",
+						},
+						Repeat = Input { Value = FuID { "Repeat" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 192, 73.2576 } },
+
+				},
+				Text_Bg_Mask = RectangleMask {
+					NameSet = true,
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 0, 0.105 }, },
+						Width = Input {
+							SourceOp = "AnimCurves1",
+							Source = "Value",
+						},
+						Height = Input {
+							Value = 0.075,
+							Expression = "CTRL.NumberIn4 > 1 and BarHeight or BarHeight*0.52",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 37, 304.258 } },
+					UserControls = ordered() { BarHeight = { INP_MaxAllowed = 10, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.075, INP_MinScale = 0, INP_MinAllowed = 0, LINKID_DataType = "Number", ICS_ControlPage = "Controls", LINKS_Name = "Bar Height" } }
+				},
+				AnimCurves1 = LUTLookup {
+					CtrlWZoom = false,
+					Inputs = {
+						Source = Input { Value = FuID { "Custom" }, },
+						Input = Input {
+							Value = 1,
+							Expression = "CTRL.NumberIn5",
+						},
+						Curve = Input { Value = FuID { "Easing" }, },
+						EaseIn = Input { Value = FuID { "Sine" }, },
+						EaseOut = Input { Value = FuID { "Cubic" }, },
+						Lookup = Input {
+							SourceOp = "AnimCurves1查找表",
+							Source = "Value",
+						},
+						Mirror = Input {
+							Value = 1,
+							Expression = "CTRL.OutAnimation",
+						},
+						Scale = Input { Value = 2, },
+					},
+				},
+				["AnimCurves1查找表"] = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 255, Green = 255, Blue = 255 },
+				},
+				FN = FastNoise {
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Detail = Input { Value = 1.26, },
+						Contrast = Input { Value = 5, },
+						Brightness = Input { Value = -0.27, },
+						SeetheRate = Input { Value = 0.1, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -358, 304.864 } },
+				},
+				Merge4_1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "FN",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "DOT_BG",
+							Source = "Output",
+						},
+						Size = Input { Value = 0.15, },
+						Operator = Input { Value = FuID { "In" }, },
+						Edges = Input { Value = 1, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -248, 304.864 } },
+				},
+				M_W = Merge {
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Background = Input {
+							SourceOp = "Merge6_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge4_1",
+							Source = "Output",
+						},
+						ApplyMode = Input { Value = FuID { "Multiply" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -138, 304.864 } },
+				},
+				BG_COLOR = Background {
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftRed = Input { Value = 0.9254901960784, },
+						TopLeftGreen = Input { Value = 0.9254901960784, },
+						TopLeftBlue = Input { Value = 0.9254901960784, },
+						GradientType = Input { Value = FuID { "Reflect" }, },
+						Start = Input { Value = { 0, 1 }, },
+						End = Input { Value = { 0.3, 0.5 }, },
+						Offset = Input {
+							Value = 0.126,
+							Expression = "time / 500",
+						},
+						Repeat = Input { Value = FuID { "Repeat" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -28, 337.864 } },
+				},
+				DOT_BG = Background {
+					NameSet = true,
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "DOT",
+							Source = "Mask",
+						},
+						GlobalOut = Input { Value = 149, },
+						Width = Input {
+							Value = 50,
+							Expression = "CTRL.NumberIn1 / 38.4",
+						},
+						Height = Input {
+							Value = 50,
+							Expression = "Width",
+						},
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -248, 337.864 } },
+				},
+				Merge6_1 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "BG_COLOR",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "GD_COLOR",
+							Source = "Output",
+						},
+						ApplyMode = Input { Value = FuID { "Color Dodge" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -138, 337.864 } },
+				},
+				Merge6 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "BG_COLOR_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "GD_COLOR_2",
+							Source = "Output",
+						},
+						ApplyMode = Input { Value = FuID { "Color Dodge" }, },
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 302, 73.2576 } },
+				},
+				DOT = EllipseMask {
+					NameSet = true,
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -248, 370.864 } },
+				},
+				GD_COLOR = Background {
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Type = Input { Value = FuID { "Gradient" }, },
+						TopLeftRed = Input { Value = 1, },
+						TopLeftGreen = Input { Value = 1, },
+						TopLeftBlue = Input { Value = 1, },
+						GradientType = Input { Value = FuID { "Reflect" }, },
+						Start = Input { Value = { 0, 1 }, },
+						End = Input { Value = { 0.5, 0.5 }, },
+						Gradient = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0.094, 0.094, 0.094, 1 },
+									[1] = { 0, 0, 0, 1 }
+								}
+							},
+						},
+						Offset = Input {
+							Value = 0.063,
+							Expression = "time / 1000",
+						},
+						Repeat = Input { Value = FuID { "Repeat" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -138, 370.864 } },
+				},
+				R = RectangleMask {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Width = Input { Value = 0.15, },
+						Height = Input {
+							Value = 0.12,
+							Expression = "CTRL.NumberIn4 > 1 and BoxHeight or BoxHeight*0.52",
+						},
+						BoxHeight = Input { Value = 0.12, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 302, 7.25757 } },
+					UserControls = ordered() { BoxHeight = { INP_MaxAllowed = 10, INP_Integer = false, INPID_InputControl = "SliderControl", INP_MaxScale = 1, INP_Default = 0.135000005364418, INP_MinScale = 0, INP_MinAllowed = 0, LINKID_DataType = "Number", ICS_ControlPage = "Controls", LINKS_Name = "Height" } }
+				},
+				ROTATE = DVE {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						XRotation = Input {
+							SourceOp = "AnimCurves2",
+							Source = "Value",
+						},
+						AlphaMode = Input { Value = 2, },
+						Input = Input {
+							SourceOp = "Merge4",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 302, 172.258 } },
+				},
+				AnimCurves2 = LUTLookup {
+					CtrlWZoom = false,
+					Inputs = {
+						Source = Input { Value = FuID { "Custom" }, },
+						Input = Input {
+							Value = 1,
+							Expression = "CTRL.NumberIn5",
+						},
+						Curve = Input { Value = FuID { "Easing" }, },
+						EaseIn = Input { Value = FuID { "Sine" }, },
+						EaseOut = Input { Value = FuID { "Cubic" }, },
+						Lookup = Input {
+							SourceOp = "AnimCurvesonROTATE查找表",
+							Source = "Value",
+						},
+						Mirror = Input {
+							Value = 1,
+							Expression = "CTRL.OutAnimation",
+						},
+						Scale = Input { Value = 270, },
+						Offset = Input { Value = 90, },
+					},
+				},
+				["AnimCurvesonROTATE查找表"] = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 255, Green = 255, Blue = 255 },
+					CtrlWZoom = false,
+				},
+				POS = Transform {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Center = Input { Value = { 0.1, 0.105 }, },
+						Input = Input {
+							SourceOp = "ROTATE",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 302, 205.258 } },
+				},
+				Merge3 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "POS",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 302, 238.258 } },
+				},
+				Merge4 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge6",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "R_T",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 302, 139.258 } },
+				},
+				GD_COLOR_2 = Background {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "R",
+							Source = "Mask",
+						},
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Type = Input { Value = FuID { "Gradient" }, },
+						TopLeftRed = Input { Value = 1, },
+						TopLeftGreen = Input { Value = 1, },
+						TopLeftBlue = Input { Value = 1, },
+						GradientType = Input { Value = FuID { "Reflect" }, },
+						Start = Input { Value = { 0, 1 }, },
+						End = Input { Value = { 0.1, 0.86 }, },
+						Gradient = Input {
+							Value = Gradient {
+								Colors = {
+									[0] = { 0, 0, 0, 1 },
+									[1] = { 0.126, 0.126, 0.126, 1 }
+								}
+							},
+						},
+						Offset = Input {
+							Value = 0.126,
+							Expression = "time / 500",
+						},
+						Repeat = Input { Value = FuID { "Repeat" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 412, 73.2576 } },
+				},
+				R_T = TextPlus {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						StyledText = Input { Value = "NEWS", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.07, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 412, 139.258 } },
+				},
+				SCALE = Transform {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Input = Input {
+							SourceOp = "Merge3",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 467, 238.258 } },
+				},
+				Background1 = Background {
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -249, 270.803 } },
+				},
+				Merge5 = Merge {
+					Inputs = {
+						Blend = Input { Expression = "ShowBackground", },
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "M_W",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -138.493, 270.723 } },
+					UserControls = ordered() {
+						ShowBackground = {
+							LINKS_Name = "Show Background",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_Default = 1,
+							INP_Integer = true,
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_MinAllowed = 0,
+							INP_MaxAllowed = 1,
+							CBC_TriState = false,
+							ICS_ControlPage = "Merge"
+						}
+					}
+				}
+			},
+			UserControls = ordered() {
+				UIManagerButton = {
+					INPID_InputControl = "LabelControl",
+					INP_External = false,
+					LINKID_DataType = "Number",
+					BTNCS_Execute = "",
+					IC_ControlPage = -1,
+					INP_Passive = true,
+					LINKS_Name = "NEWS Templates",
+				}
+			}
+		}
+	},
+	ActiveTool = "ScrollText01"
+}

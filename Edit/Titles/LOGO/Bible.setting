@@ -1,0 +1,46 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			CtrlWZoom = false,
+			NameSet = true,
+			Inputs = {
+				Softness2 = Input { Value = 1, },
+				GlobalOut = Input { Value = 478, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				Center = Input { Value = { 0.5, 0.616 }, },
+				SelectElement = Input { Value = 2, },
+				Select = Input { Value = 2, },
+				Enabled3 = Input { Value = 1, },
+				StyledText = Input {
+					SourceOp = "CharacterLevelStyling1",
+					Source = "StyledText",
+				},
+				Font = Input { Value = "Sahitya", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.1447, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Alpha3 = Input { Value = 0.417, },
+				Softness3 = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 219.271, 50.8259 } },
+		},
+		CharacterLevelStyling1 = StyledTextCLS {
+			CtrlWZoom = false,
+			Inputs = {
+				TransformRotation = Input { Value = 1, },
+				Softness = Input { Value = 1, },
+				Text = Input { Value = "\"अपने मार्ग की चिन्ता यहोवा \nपर छोड़ ; और उस पर \nभरोसा रख, वही पूरा करेगा\"\n(भजन संहिता 37:5)। (© BSI)", },
+				CharacterLevelStyling = Input {
+					Value = StyledText {
+						Array = {
+							{ 102, 75, 100, Value = 0.0635 }
+						}
+					},
+				}
+			},
+		}
+	}
+}

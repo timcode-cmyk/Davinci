@@ -1,0 +1,64 @@
+{
+	Tools = ordered() {
+		["FU_去黑背景_A1"] = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Background6_1",
+					Source = "Comments",
+					Name = "SM",
+				},
+				MainInput1 = InstanceInput {
+					SourceOp = "ChannelBooleans1_1",
+					Source = "Background",
+					Name = "素材输入",
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "ChannelBooleans3_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				ChannelBooleans3_1 = ChannelBoolean {
+					CtrlWShown = false,
+					Inputs = {
+						ToRed = Input { Value = 4, },
+						ToGreen = Input { Value = 4, },
+						ToBlue = Input { Value = 4, },
+						ToAlpha = Input { Value = 10, },
+						Background = Input {
+							SourceOp = "ChannelBooleans1_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 82.5, 142.15 } },
+				},
+				Background6_1 = Background {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Comments = Input { Value = "这个去黑的方法还不错，有兴趣可以解锁宏学习，比用bitmap节点方便，连接即用，不用调任何参数。", },
+					},
+					ViewInfo = OperatorInfo { Pos = { -55, 16.5 } },
+				},
+				ChannelBooleans1_1 = ChannelBoolean {
+					CtrlWShown = false,
+					Inputs = {
+						Operation = Input { Value = 2, },
+						Foreground = Input {
+							SourceOp = "Background6_1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -82.5, 142.15 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "FU_去黑背景_A1"
+}

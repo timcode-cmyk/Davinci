@@ -1,0 +1,92 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			Inputs = {
+				GlobalOut = Input { Value = 149, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Center = Input { Value = { 0.500948766603416, 0.501686340640809 }, },
+				StyledText = Input { Value = "00", },
+				Font = Input { Value = "Open Sans", },
+				Style = Input { Value = "Bold", },
+				Size = Input { Value = 0.2, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				AdvancedFontControls = Input { Value = 1, },
+				ForceMonospaced = Input { Value = 1, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = ""
+					},
+				},
+				FrameRenderScript = Input { Value = "Template.StyledText = counter(Template.StartNumber,Template.EndNumber, Template.EndFrame)", },
+				StartRenderScripts = Input { Value = 1, },
+				StartRenderScript = Input { Value = "function counter (startNumber, endNumber, frame) \n\n    startNumber = startNumber or 0;\n    endNumber = endNumber or 0;\n	frame = frame or comp.RenderEnd;\n\n    if frame > comp.RenderEnd or frame == 0 then\n        frame = comp.RenderEnd;\n    end\n\n    if time <= frame then\n    	return math.floor( time * ((endNumber-startNumber) / frame) ) + startNumber;\n	else\n		return endNumber\n    end\nend", },
+				EndRenderScripts = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 220, 49.5 } },
+			UserControls = ordered() {
+				UIManagerButton = {
+					INPID_InputControl = "LabelControl",
+					INP_External = false,
+					LINKID_DataType = "Number",
+					BTNCS_Execute = "",
+					IC_ControlPage = -1,
+					INP_Passive = true,
+					LINKS_Name = "Utility Tools",
+				},
+				Lable1 = {
+					INP_MaxAllowed = 1,
+					INP_Integer = false,
+					LBLC_DropDownButton = true,
+					INPID_InputControl = "LabelControl",
+					LBLC_NumInputs = 3,
+					INP_MaxScale = 1,
+					INP_Default = 1,
+					INP_MinScale = 0,
+					INP_MinAllowed = 0,
+					LINKID_DataType = "Number",
+					LINKS_Name = "设置",
+				},
+				StartNumber = {
+					INP_MaxAllowed = 1000000,
+					INP_Integer = true,
+					INPID_InputControl = "ScrewControl",
+					INP_MaxScale = 1000,
+					INP_Default = 0,
+					INP_MinScale = 0,
+					INP_MinAllowed = 0,
+					LINKID_DataType = "Number",
+					LINKS_Name = "起始数字",
+				},
+				EndNumber = {
+					INP_MaxAllowed = 1000000,
+					INP_Integer = true,
+					INPID_InputControl = "ScrewControl",
+					INP_MaxScale = 100,
+					INP_Default = 100,
+					INP_MinScale = 0,
+					INP_MinAllowed = 0,
+					LINKID_DataType = "Number",
+					LINKS_Name = "结束数字",
+				},
+				EndFrame = {
+					INP_MaxAllowed = 1000000,
+					INP_Integer = true,
+					INP_MinAllowed = 0,
+					LINKID_DataType = "Number",
+					INPID_InputControl = "ScrewControl",
+					INP_MinScale = 0,
+					INP_MaxScale = 100,
+					LINKS_Name = "结束帧",
+				},
+				
+			}
+		}
+	},
+	ActiveTool = "Template"
+}

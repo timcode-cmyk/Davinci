@@ -1,0 +1,304 @@
+{
+	Tools = ordered() {
+		Renderer3D2 = Renderer3D {
+			CustomData = { ToolVersion = 2, },
+			Inputs = {
+				GlobalOut = Input { Value = 359, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				SceneInput = Input {
+					SourceOp = "Merge3D2",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 3331.1, -684.542 } },
+		},
+		pRender4 = pRender {
+			Inputs = {
+				_MotionBlurWarning = Input { Disabled = true, },
+				GlobalOut = Input { Value = 359, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				OutputMode = Input { Disabled = true, },
+				["MaterialID.MaterialID"] = Input { Value = 3, },
+				["ObjectID.ObjectID"] = Input { Value = 3, },
+				Input = Input {
+					SourceOp = "pTurbulence1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 2856.07, -684.542 } },
+		},
+		pTurbulence1 = pTurbulence {
+			ID = 474,
+			Inputs = {
+				XStrength = Input { Value = 1, },
+				YStrength = Input { Value = 0.457, },
+				ZStrength = Input { Value = 0.362, },
+				StrengthOverLifeLUT = Input {
+					SourceOp = "pTurbulence1StrengthOverLifeLUT",
+					Source = "Value",
+				},
+				Density = Input { Value = 54.3, },
+				Input = Input {
+					SourceOp = "pDirectionalForce2",
+					Source = "Output",
+				},
+				RegionMode = Input { Value = FuID { "Inside" }, },
+				Region = Input { Value = FuID { "MeshRegion" }, },
+				["MeshRegion.MeshInput"] = Input {
+					SourceOp = "Shape3D1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 2727.78, -684.542 } },
+		},
+		pTurbulence1StrengthOverLifeLUT = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0.5, RH = { 0.333333333333333, 0.5 }, Flags = { Linear = true } },
+					[1] = { 0.5, LH = { 0.666666666666667, 0.5 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 0 },
+			CtrlWZoom = false,
+		},
+		Merge3D2 = Merge3D {
+			CtrlWZoom = false,
+			Inputs = {
+				SceneInput1 = Input {
+					SourceOp = "Replicate3D1",
+					Source = "Data3D",
+				},
+				SceneInput2 = Input {
+					SourceOp = "Camera3D2",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 3181.16, -684.542 } },
+		},
+		Replicate3D1 = Replicate3D {
+			Inputs = {
+				Alignment = Input { Value = 2, },
+				Translation = Input { Value = 1, },
+				Rotation = Input { Value = 1, },
+				ScaleNest = Input { Value = 1, },
+				Destination = Input {
+					SourceOp = "pRender4",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 3020.87, -684.542 } },
+		},
+		pDirectionalForce2 = pDirectionalForce {
+			ID = 405,
+			Inputs = {
+				["RectRgn.Width"] = Input { Value = 1, },
+				["RectRgn.Translate.Y"] = Input { Value = 0.893280238924838, },
+				["RectRgn.Height"] = Input { Value = 0.693, },
+				Input = Input {
+					SourceOp = "pEmitter4",
+					Source = "Output",
+				},
+				RegionMode = Input { Value = FuID { "Inside" }, },
+				Region = Input { Value = FuID { "MeshRegion" }, },
+				["MeshRegion.MeshInput"] = Input {
+					SourceOp = "Shape3D1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 2575.55, -684.542 } },
+		},
+		pEmitter4 = pEmitter {
+			ID = 396,
+			Inputs = {
+				["RectRgn.Width"] = Input { Value = 0.614, },
+				["RectRgn.Height"] = Input { Value = 0.969, },
+				Number = Input {
+					SourceOp = "pEmitter4数量",
+					Source = "Value",
+				},
+				Lifespan = Input { Value = 150, },
+				VelocityControls = Input { Value = 1, },
+				RotationControls = Input { Value = 1, },
+				RotationZVariance = Input { Value = 50, },
+				SpinControls = Input { Value = 1, },
+				Style = Input { Value = FuID { "ParticleStyleBitmap" }, },
+				["ParticleStyleBitmap.DropToolsHere"] = Input {
+					SourceOp = "Scale1",
+					Source = "Output",
+				},
+				Region = Input { Value = FuID { "CubeRgn" }, },
+				["ParticleStyle.ColorControls"] = Input { Value = 1, },
+				["ParticleStyle.ColorVariance"] = Input { Value = 1, },
+				["ParticleStyle.GreenLow"] = Input { Value = -0.012, },
+				["ParticleStyle.BlueHigh"] = Input { Value = 0.137, },
+				["ParticleStyle.SizeControls"] = Input { Value = 1, },
+				["ParticleStyle.Size"] = Input { Value = 0.0433, },
+				["ParticleStyle.SizeOverLife"] = Input {
+					SourceOp = "pEmitter4SizeOverLife",
+					Source = "Value",
+				},
+				["ParticleStyle.BlurOverLife"] = Input {
+					SourceOp = "pEmitter4BlurOverLife2D",
+					Source = "Value",
+				},
+				["CubeRgn.Width"] = Input { Value = 0.661, },
+				["CubeRgn.Height"] = Input { Value = 1, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 2440.02, -684.542 } },
+		},
+		["pEmitter4数量"] = BezierSpline {
+			SplineColor = { Red = 251, Green = 49, Blue = 0 },
+			KeyFrames = {
+				[0] = { 800, RH = { 0.333333333333333, 533.333333333333 }, Flags = { Linear = true } },
+				[1] = { 0, LH = { 0.666666666666667, 266.666666666667 }, Flags = { Linear = true } }
+			}
+		},
+		pEmitter4SizeOverLife = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0.5, RH = { 0.333333333333333, 0.5 }, Flags = { Linear = true } },
+					[1] = { 0.5, LH = { 0.666666666666667, 0.5 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 192, Green = 128, Blue = 64 },
+		},
+		pEmitter4BlurOverLife2D = LUTBezier {
+			KeyColorSplines = {
+				[0] = {
+					[0] = { 0.5, RH = { 0.333333333333333, 0.5 }, Flags = { Linear = true } },
+					[1] = { 0.5, LH = { 0.666666666666667, 0.5 }, Flags = { Linear = true } }
+				}
+			},
+			SplineColor = { Red = 0, Green = 0, Blue = 0 },
+			CtrlWZoom = false,
+		},
+		Scale1 = Scale {
+			Inputs = {
+				XSize = Input { Value = 0.2, },
+				HiQOnly = Input { Value = 0, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				Input = Input {
+					SourceOp = "Crop1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 2321.69, -684.542 } },
+		},
+		Crop1 = Crop {
+			Inputs = {
+				XOffset = Input { Value = 130, },
+				YOffset = Input { Value = 540, },
+				XSize = Input { Value = 807, },
+				YSize = Input { Value = 775, },
+				Input = Input {
+					SourceOp = "Background6",
+					Source = "Output",
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 2203.92, -684.542 } },
+		},
+		Camera3D2 = Camera3D {
+			Inputs = {
+				["Transform3DOp.Translate.Y"] = Input { Value = 0.098501526490248, },
+				["Transform3DOp.Translate.Z"] = Input { Value = 2.43773929081873, },
+				AoV = Input { Value = 33.0828390256932, },
+				FLength = Input { Value = 20, },
+				["Stereo.Mode"] = Input { Value = FuID { "Mono" }, },
+				FilmGate = Input { Value = FuID { "BMD_URSA_4K_16x9" }, },
+				ApertureW = Input { Value = 0.831496062992126, },
+				ApertureH = Input { Value = 0.467716535433071, },
+				["SurfacePlaneInputs.ObjectID.ObjectID"] = Input { Value = 4, },
+				["MtlStdInputs.MaterialID"] = Input { Value = 4, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 3181.16, -722.952 } },
+		},
+		Background6 = Background {
+			Inputs = {
+				EffectMask = Input {
+					SourceOp = "Polygon1_1",
+					Source = "Mask",
+				},
+				GlobalOut = Input { Value = 359, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+				Type = Input { Value = FuID { "Gradient" }, },
+				TopLeftRed = Input { Value = 0.701, },
+				TopLeftGreen = Input { Value = 0.257267, },
+				TopLeftBlue = Input { Value = 0.257267, },
+				Start = Input { Value = { 0.0775510204081633, 0.669724770642202 }, },
+				End = Input { Value = { 0.836734693877551, 0.307339449541284 }, },
+				Gradient = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 0.583, 0.091531, 0.091531, 1 },
+							[1] = { 0.866, 0.312626, 0.312626, 1 }
+						}
+					},
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 2084.75, -684.542 } },
+		},
+		Shape3D1 = Shape3D {
+			Inputs = {
+				["SurfacePlaneInputs.ObjectID.ObjectID"] = Input { Value = 6, },
+				["Transform3DOp.Translate.Y"] = Input {
+					SourceOp = "Shape3D1Y轴偏移",
+					Source = "Value",
+				},
+				Shape = Input { Value = FuID { "SurfaceCubeInputs" }, },
+				["MtlStdInputs.MaterialID"] = Input { Value = 6, },
+				["SurfaceCubeInputs.ObjectID.ObjectID"] = Input { Value = 7, }
+			},
+			ViewInfo = OperatorInfo { Pos = { 2645.44, -748.135 } },
+		},
+		["Shape3D1Y轴偏移"] = BezierSpline {
+			SplineColor = { Red = 253, Green = 0, Blue = 0 },
+			CtrlWZoom = false,
+			KeyFrames = {
+				[0] = { 1.02224336325329, RH = { 26.6666666666667, 0.677906107434838 }, Flags = { Linear = true } },
+				[80] = { -0.010768404202066, LH = { 53.3333333333333, 0.333568851616386 }, Flags = { Linear = true } }
+			}
+		},
+		Polygon1_1 = PolylineMask {
+			DrawMode = "InsertAndModify",
+			DrawMode2 = "InsertAndModify",
+			Inputs = {
+				Filter = Input { Value = FuID { "Fast Gaussian" }, },
+				SoftEdge = Input { Value = 0.007, },
+				MaskWidth = Input { Value = 1080, },
+				MaskHeight = Input { Value = 1920, },
+				PixelAspect = Input { Value = { 1, 1 }, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				ClippingMode = Input { Value = FuID { "None" }, },
+				Polyline = Input {
+					Value = Polyline {
+						Closed = true,
+						Points = {
+							{ X = 0.00401594302179073, Y = 0.107084643986565, LX = -0.00102217174555514, LY = -0.0019112924167967, RX = 0.000407845694608372, RY = 0.000762604118845889 },
+							{ X = -0.196149766297373, Y = 0.158689524636939, LX = 0.114461393022698, LY = 0.00915004191825903, RX = -0.177392769012096, RY = -0.0141683302658858 },
+							{ X = -0.2521641658324, Y = -0.0405762574155983, LX = -0.108802366155604, LY = 0.0706445325951745, RX = 0.126358757219856, RY = -0.0820437611654376 },
+							{ X = 0.0036389521379831, Y = -0.186678397182423, LX = -0.0997567225646749, LY = 0.0523289564871167, RX = 0.100849981580875, RY = 0.0511188762152076 },
+							{ X = 0.293766662427955, Y = -0.010145191779572, LX = -0.069881606163111, LY = -0.0665009093396509, RX = 0.0702487153557847, RY = 0.0668502587103977 },
+							{ X = 0.184973541023679, Y = 0.157288093982649, LX = 0.145637724613789, LY = -0.00997998905680006, RX = -0.108414368425457, RY = 0.00869462079818271 }
+						}
+					},
+				},
+				Polyline2 = Input {
+					Value = Polyline {
+					},
+					Disabled = true,
+				}
+			},
+			ViewInfo = OperatorInfo { Pos = { 1969.84, -684.542 } },
+		}
+	},
+	ActiveTool = "Merge3D2"
+}

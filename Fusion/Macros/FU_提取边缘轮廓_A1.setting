@@ -1,0 +1,131 @@
+{
+	Tools = ordered() {
+		["FU_提取边缘轮廓_A1"] = MacroOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "Bitmap",
+					Source = "Image",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Bitmap",
+					Source = "Channel",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Blur1",
+					Source = "LockXY",
+					Name = "锁定 X/Y",
+					Default = 1,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Blur1",
+					Source = "XBlurSize",
+					Default = 20,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Blur1",
+					Source = "YBlurSize",
+					Default = 1,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "EdgeBlender",
+					Source = "Comments",
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Bitmap1",
+					Source = "Mask",
+					Name = "灯光包裹遮罩",
+				},
+				MainOutput2 = InstanceOutput {
+					SourceOp = "EdgeBlender",
+					Source = "Output",
+					Name = "边缘模糊遮罩",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				ChannelBooleans = ChannelBoolean {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Operation = Input { Value = 10, },
+						Background = Input {
+							SourceOp = "Bitmap",
+							Source = "Mask",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 521, 58 } },
+				},
+				Bitmap = BitmapMask {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 411, 124 } },
+				},
+				Blur1 = Blur {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						XBlurSize = Input { Value = 20, },
+						Input = Input {
+							SourceOp = "ChannelBooleans",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 631, 58 } },
+				},
+				["Lightwrap灯光包裹"] = ChannelBoolean {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Operation = Input { Value = 6, },
+						Background = Input {
+							SourceOp = "Bitmap",
+							Source = "Mask",
+						},
+						Foreground = Input {
+							SourceOp = "Blur1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 631, 124 } },
+				},
+				Bitmap1 = BitmapMask {
+					CtrlWShown = false,
+					Inputs = {
+						MaskWidth = Input { Value = 1920, },
+						MaskHeight = Input { Value = 1080, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Image = Input {
+							SourceOp = "Lightwrap灯光包裹",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { 631, 157 } },
+				},
+				EdgeBlender = Filter {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						FilterType = Input { Value = 3, },
+						Input = Input {
+							SourceOp = "Bitmap",
+							Source = "Mask",
+						},
+						Comments = Input { Value = "Channel 模式指定从什么通道获取轮廓\nBlur Size 指定灯光包裹的尺寸", },
+					},
+					ViewInfo = OperatorInfo { Pos = { 631, 190 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "FU_提取边缘轮廓_A1"
+}
