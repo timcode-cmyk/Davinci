@@ -44,7 +44,7 @@
 				Input8 = InstanceInput {
 					SourceOp = "Template",
 					Source = "Size",
-					Default = 0.09,
+					Default = 0.05,
 				},
 				Input9 = InstanceInput {
 					SourceOp = "Template",

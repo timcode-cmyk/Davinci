@@ -4,7 +4,7 @@
 			CtrlWZoom = false,
 			Outputs = {
 				Output1 = InstanceOutput {
-					SourceOp = "Loader1",
+					SourceOp = "Transform1",
 					Source = "Output",
 				}
 			},
@@ -51,6 +51,18 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 279.89, -9.95703 } },
 				},
+				Transform1 = Transform {
+					Inputs = {
+						Center = Input { Value = { 0.462, 0.465 }, },
+						Pivot = Input { Value = { 0.946529080675422, 0.976991552270327 }, },
+						Size = Input { Value = 1.877, },
+						Input = Input {
+							SourceOp = "Loader1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 279.89, 31.2953 } },
+				}
 			},
 		}
 	},

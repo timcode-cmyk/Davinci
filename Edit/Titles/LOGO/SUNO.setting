@@ -4,18 +4,23 @@
 			CtrlWZoom = false,
 			NameSet = true,
 			Inputs = {
-				GlobalOut = Input { Value = 713, },
+				GlobalOut = Input { Value = 149, },
 				Width = Input { Value = 1080, },
 				Height = Input { Value = 1920, },
 				UseFrameFormatSettings = Input { Value = 1, },
-				Center = Input { Value = { 0.125961491406531, 0.0112728709794514 }, },
+				Center = Input { Value = { 0.0472430807990633, 0.0248352575405429 }, },
+				SelectElement = Input { Value = 2, },
+				Select = Input { Value = 2, },
+				Enabled3 = Input { Value = 1, },
 				Opacity1 = Input { Value = 0.811, },
 				StyledText = Input { Value = "Song attributed to suno", },
 				Font = Input { Value = "Open Sans", },
 				Style = Input { Value = "Extrabold", },
 				Size = Input { Value = 0.03, },
 				VerticalJustificationNew = Input { Value = 3, },
-				HorizontalJustificationNew = Input { Value = 3, }
+				HorizontalLeftCenterRight = Input { Value = -1, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Softness3 = Input { Value = 1, }
 			},
 			ViewInfo = OperatorInfo { Pos = { -896.149, 62.4313 } },
 		}
