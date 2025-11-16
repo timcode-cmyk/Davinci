@@ -1,0 +1,1788 @@
+{
+	Tools = ordered() {
+		MacroTool1 = MacroOperator {
+			CtrlWZoom = false,
+			CustomData = {
+				Path = {
+					Map = {
+						["Setting:"] = "Macros:/"
+					}
+				},
+			},
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "StyledText",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Font",
+					ControlGroup = 2,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Style",
+					ControlGroup = 2,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Red1Clone",
+					Name = "颜色",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Green1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Blue1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Alpha1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Size",
+					Default = 0.1643,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "CharacterSpacingClone",
+					Name = "字距",
+					Default = 1,
+				},
+				Input10 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "LineSpacingClone",
+					Default = 1,
+				},
+				Input11 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "VerticalJustificationTop",
+					Name = "垂直锚点",
+					ControlGroup = 7,
+				},
+				Input12 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "VerticalJustificationCenter",
+					ControlGroup = 7,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "VerticalJustificationBottom",
+					ControlGroup = 7,
+				},
+				Input14 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "VerticalTopCenterBottom",
+					Default = 0,
+				},
+				Input15 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "CenterOnBaseOfFirstLine",
+					Default = 0,
+				},
+				Input16 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "VerticallyJustified",
+					Default = 0,
+				},
+				Input17 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "HorizontalJustificationLeft",
+					Name = "水平锚点",
+					ControlGroup = 11,
+				},
+				Input18 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "HorizontalJustificationCenter",
+					ControlGroup = 11,
+				},
+				Input19 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "HorizontalJustificationRight",
+					ControlGroup = 11,
+				},
+				Input20 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "HorizontalLeftCenterRight",
+					Default = 0,
+				},
+				Input21 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "HorizontallyJustified",
+					Default = 0,
+				},
+				Input22 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Scroll",
+				},
+				Input23 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ScrollPosition",
+					Default = 0.5,
+				},
+				Input24 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Direction",
+					Default = 0,
+				},
+				Input25 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "LineDirection",
+					Default = 0,
+				},
+				Input26 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Strikeout",
+					Name = "强调样式",
+					ControlGroup = 18,
+				},
+				Input27 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Underline",
+					Name = "强调样式",
+					ControlGroup = 18,
+				},
+				Input28 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Start",
+					Name = "开始",
+					ControlGroup = 19,
+					Default = 0,
+				},
+				Input29 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "End",
+					Name = "结束",
+					ControlGroup = 19,
+					Default = 1,
+				},
+				Input30 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab",
+				},
+				Input31 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab1Position",
+					Name = "位置",
+					Default = 0.125,
+				},
+				Input32 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab1Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input33 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab2Position",
+					Name = "位置",
+					Default = 0.25,
+				},
+				Input34 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab2Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input35 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab3Position",
+					Name = "位置",
+					Default = 0.375,
+				},
+				Input36 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab3Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input37 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab4Position",
+					Name = "位置",
+					Default = 0.5,
+				},
+				Input38 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab4Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input39 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab5Position",
+					Name = "位置",
+					Default = 0.625,
+				},
+				Input40 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab5Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input41 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab6Position",
+					Name = "位置",
+					Default = 0.75,
+				},
+				Input42 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab6Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input43 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab7Position",
+					Name = "位置",
+					Default = 0.875,
+				},
+				Input44 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab7Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input45 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab8Position",
+					Name = "位置",
+					Default = 1,
+				},
+				Input46 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Tab8Alignment",
+					Name = "对齐方式",
+					Default = 0,
+				},
+				Input47 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ReadingDirection",
+					Default = 0,
+				},
+				Input48 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Orientation",
+					Default = 0,
+				},
+				Input49 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "UnderlinePosition",
+					Default = 0,
+				},
+				Input50 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ForceMonospaced",
+					Default = 0,
+				},
+				Input51 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "UseFontKerning",
+					Default = 1,
+				},
+				Input52 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "UseLigatures",
+					Default = 1,
+				},
+				Input53 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "SplitLigatures",
+					Default = 0,
+				},
+				Input54 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "StylisticSet",
+					Default = 0,
+				},
+				Input55 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "FontFeatures",
+					DefaultText = "",
+				},
+				Input56 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ManualFontKerning",
+				},
+				Input57 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ClearSelectedKerning",
+					Width = 0.5,
+				},
+				Input58 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ClearAllKerning",
+					Width = 0.5,
+				},
+				Input59 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ManualFontPlacement",
+				},
+				Input60 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ClearSelectedPlacement",
+					Width = 0.5,
+				},
+				Input61 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "ClearAllPlacement",
+					Width = 0.5,
+				},
+				Input62 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "LayoutType",
+					Name = "类型",
+				},
+				Input63 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Center",
+					Name = "中心",
+				},
+				Input64 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "CenterZ",
+					Name = "中心Z轴",
+					Default = 0,
+				},
+				Input65 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "LayoutSize",
+					Name = "大小",
+					Default = 1,
+				},
+				Input66 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "LayoutWidth",
+					Name = "宽度",
+					Default = 0.5,
+				},
+				Input67 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "LayoutHeight",
+					Name = "高度",
+					Default = 0.5,
+				},
+				Input68 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "Perspective",
+					Name = "透视",
+					Default = 1,
+				},
+				Input69 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "AngleX",
+					Name = "X轴",
+					Default = 0,
+				},
+				Input70 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "AngleY",
+					Name = "Y轴",
+					Default = 0,
+				},
+				Input71 = InstanceInput {
+					SourceOp = "Text1_1",
+					Source = "AngleZ",
+					Name = "Z轴",
+					Default = 0,
+				},
+				Input72 = InstanceInput {
+					SourceOp = "Glow2_1_1",
+					Source = "XGlowSize",
+					Default = 10,
+				},
+				Input73 = InstanceInput {
+					SourceOp = "Glow2_1_1",
+					Source = "Glow",
+					Default = 0.8,
+				},
+				Input74 = InstanceInput {
+					SourceOp = "Glow2_1_1",
+					Source = "BlendClone",
+					Default = 0.2,
+				},
+				Input75 = InstanceInput {
+					SourceOp = "Glow2_2",
+					Source = "XGlowSize",
+					Default = 10,
+				},
+				Input76 = InstanceInput {
+					SourceOp = "Glow2_2",
+					Source = "Glow",
+					Default = 0.8,
+				},
+				Input77 = InstanceInput {
+					SourceOp = "Glow2_2",
+					Source = "BlendClone",
+					Default = 0.2,
+				},
+				Input78 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelHue1",
+					ControlGroup = 68,
+				},
+				Input79 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelSaturation1",
+					ControlGroup = 68,
+					Default = 1,
+				},
+				Input80 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintAngle1",
+					ControlGroup = 68,
+					Default = 0.1480161028443,
+				},
+				Input81 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintLength1",
+					ControlGroup = 68,
+					Default = 1,
+				},
+				Input82 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelHue2",
+					ControlGroup = 68,
+				},
+				Input83 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelSaturation2",
+					ControlGroup = 68,
+					Default = 1,
+				},
+				Input84 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintAngle2",
+					ControlGroup = 68,
+				},
+				Input85 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintLength2",
+					ControlGroup = 68,
+				},
+				Input86 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelHue3",
+					ControlGroup = 68,
+				},
+				Input87 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelSaturation3",
+					ControlGroup = 68,
+					Default = 1,
+				},
+				Input88 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintAngle3",
+					ControlGroup = 68,
+				},
+				Input89 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintLength3",
+					ControlGroup = 68,
+				},
+				Input90 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelHue4",
+					ControlGroup = 68,
+				},
+				Input91 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelSaturation4",
+					ControlGroup = 68,
+					Default = 1,
+				},
+				Input92 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintAngle4",
+					ControlGroup = 68,
+				},
+				Input93 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "WheelTintLength4",
+					ControlGroup = 68,
+				},
+				Input94 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "TintMode",
+					Default = 2,
+				},
+				Input95 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Hue1",
+					Name = "色相",
+				},
+				Input96 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Saturation1",
+					Name = "饱和度",
+					Default = 1,
+				},
+				Input97 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Hue2",
+					Name = "色相",
+				},
+				Input98 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Saturation2",
+					Name = "饱和度",
+					Default = 1,
+				},
+				Input99 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Hue3",
+					Name = "色相",
+				},
+				Input100 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Saturation3",
+					Name = "饱和度",
+					Default = 1,
+				},
+				Input101 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Hue4",
+					Name = "色相",
+				},
+				Input102 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Saturation4",
+					Name = "饱和度",
+					Default = 1,
+				},
+				Input103 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Channel",
+				},
+				Input104 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Histogram",
+					ControlGroup = 79,
+				},
+				Input105 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HistogramReference",
+					ControlGroup = 79,
+				},
+				Input106 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HistogramOutput",
+					ControlGroup = 79,
+				},
+				Input107 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HistogramCurve",
+					ControlGroup = 79,
+				},
+				Input108 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HistogramType",
+				},
+				Input109 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "EqualizeLuminance",
+					Default = 0,
+				},
+				Input110 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "LockRedGreenBlue",
+					Default = 1,
+				},
+				Input111 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "EqualizeRed",
+					Default = 1,
+				},
+				Input112 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "EqualizeGreen",
+					Default = 1,
+				},
+				Input113 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "EqualizeBlue",
+					Default = 1,
+				},
+				Input114 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Precision",
+					Default = 2,
+				},
+				Input115 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "SmoothOutCorrectionCurve",
+					Default = 0,
+				},
+				Input116 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "SnapshotMatch",
+					Width = 0.58,
+				},
+				Input117 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ReleaseMatch",
+					Width = 0.42,
+				},
+				Input118 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MatchShow",
+					Default = 0,
+				},
+				Input119 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MatchCenter",
+					DefaultX = 0.5,
+					DefaultY = 0.5,
+				},
+				Input120 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MatchWidth",
+					Default = 1,
+				},
+				Input121 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MatchHeight",
+					Default = 1,
+				},
+				Input122 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ResetAllHistogramChanges",
+				},
+				Input123 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input124 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input125 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input126 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input127 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input128 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBLow",
+					ControlGroup = 100,
+					Default = 0,
+				},
+				Input129 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBMid",
+					ControlGroup = 100,
+					Default = 1,
+				},
+				Input130 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBHigh",
+					ControlGroup = 100,
+					Default = 1,
+				},
+				Input131 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBOutputLow",
+					ControlGroup = 101,
+					Default = 0,
+				},
+				Input132 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRGBOutputHigh",
+					ControlGroup = 101,
+					Default = 1,
+				},
+				Input133 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input134 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input135 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input136 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input137 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input138 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedLow",
+					ControlGroup = 107,
+					Default = 0,
+				},
+				Input139 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedMid",
+					ControlGroup = 107,
+					Default = 1,
+				},
+				Input140 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedHigh",
+					ControlGroup = 107,
+					Default = 1,
+				},
+				Input141 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedOutputLow",
+					ControlGroup = 108,
+					Default = 0,
+				},
+				Input142 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterRedOutputHigh",
+					ControlGroup = 108,
+					Default = 1,
+				},
+				Input143 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input144 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input145 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input146 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input147 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input148 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenLow",
+					ControlGroup = 114,
+					Default = 0,
+				},
+				Input149 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenMid",
+					ControlGroup = 114,
+					Default = 1,
+				},
+				Input150 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenHigh",
+					ControlGroup = 114,
+					Default = 1,
+				},
+				Input151 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenOutputLow",
+					ControlGroup = 115,
+					Default = 0,
+				},
+				Input152 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterGreenOutputHigh",
+					ControlGroup = 115,
+					Default = 1,
+				},
+				Input153 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input154 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input155 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input156 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input157 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input158 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueLow",
+					ControlGroup = 121,
+					Default = 0,
+				},
+				Input159 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueMid",
+					ControlGroup = 121,
+					Default = 1,
+				},
+				Input160 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueHigh",
+					ControlGroup = 121,
+					Default = 1,
+				},
+				Input161 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueOutputLow",
+					ControlGroup = 122,
+					Default = 0,
+				},
+				Input162 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MasterBlueOutputHigh",
+					ControlGroup = 122,
+					Default = 1,
+				},
+				Input163 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input164 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input165 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input166 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input167 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input168 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBLow",
+					ControlGroup = 128,
+					Default = 0,
+				},
+				Input169 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBMid",
+					ControlGroup = 128,
+					Default = 1,
+				},
+				Input170 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBHigh",
+					ControlGroup = 128,
+					Default = 1,
+				},
+				Input171 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBOutputLow",
+					ControlGroup = 129,
+					Default = 0,
+				},
+				Input172 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRGBOutputHigh",
+					ControlGroup = 129,
+					Default = 1,
+				},
+				Input173 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input174 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input175 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input176 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input177 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input178 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedLow",
+					ControlGroup = 135,
+					Default = 0,
+				},
+				Input179 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedMid",
+					ControlGroup = 135,
+					Default = 1,
+				},
+				Input180 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedHigh",
+					ControlGroup = 135,
+					Default = 1,
+				},
+				Input181 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedOutputLow",
+					ControlGroup = 136,
+					Default = 0,
+				},
+				Input182 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsRedOutputHigh",
+					ControlGroup = 136,
+					Default = 1,
+				},
+				Input183 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input184 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input185 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input186 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input187 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input188 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenLow",
+					ControlGroup = 142,
+					Default = 0,
+				},
+				Input189 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenMid",
+					ControlGroup = 142,
+					Default = 1,
+				},
+				Input190 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenHigh",
+					ControlGroup = 142,
+					Default = 1,
+				},
+				Input191 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenOutputLow",
+					ControlGroup = 143,
+					Default = 0,
+				},
+				Input192 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsGreenOutputHigh",
+					ControlGroup = 143,
+					Default = 1,
+				},
+				Input193 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input194 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input195 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input196 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input197 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input198 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueLow",
+					ControlGroup = 149,
+					Default = 0,
+				},
+				Input199 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueMid",
+					ControlGroup = 149,
+					Default = 1,
+				},
+				Input200 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueHigh",
+					ControlGroup = 149,
+					Default = 1,
+				},
+				Input201 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueOutputLow",
+					ControlGroup = 150,
+					Default = 0,
+				},
+				Input202 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "ShadowsBlueOutputHigh",
+					ControlGroup = 150,
+					Default = 1,
+				},
+				Input203 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input204 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input205 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input206 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input207 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input208 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBLow",
+					ControlGroup = 156,
+					Default = 0,
+				},
+				Input209 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBMid",
+					ControlGroup = 156,
+					Default = 1,
+				},
+				Input210 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBHigh",
+					ControlGroup = 156,
+					Default = 1,
+				},
+				Input211 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBOutputLow",
+					ControlGroup = 157,
+					Default = 0,
+				},
+				Input212 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRGBOutputHigh",
+					ControlGroup = 157,
+					Default = 1,
+				},
+				Input213 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input214 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input215 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input216 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input217 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input218 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedLow",
+					ControlGroup = 163,
+					Default = 0,
+				},
+				Input219 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedMid",
+					ControlGroup = 163,
+					Default = 1,
+				},
+				Input220 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedHigh",
+					ControlGroup = 163,
+					Default = 1,
+				},
+				Input221 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedOutputLow",
+					ControlGroup = 164,
+					Default = 0,
+				},
+				Input222 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesRedOutputHigh",
+					ControlGroup = 164,
+					Default = 1,
+				},
+				Input223 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input224 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input225 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input226 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input227 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input228 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenLow",
+					ControlGroup = 170,
+					Default = 0,
+				},
+				Input229 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenMid",
+					ControlGroup = 170,
+					Default = 1,
+				},
+				Input230 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenHigh",
+					ControlGroup = 170,
+					Default = 1,
+				},
+				Input231 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenOutputLow",
+					ControlGroup = 171,
+					Default = 0,
+				},
+				Input232 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesGreenOutputHigh",
+					ControlGroup = 171,
+					Default = 1,
+				},
+				Input233 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input234 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input235 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input236 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input237 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input238 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueLow",
+					ControlGroup = 177,
+					Default = 0,
+				},
+				Input239 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueMid",
+					ControlGroup = 177,
+					Default = 1,
+				},
+				Input240 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueHigh",
+					ControlGroup = 177,
+					Default = 1,
+				},
+				Input241 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueOutputLow",
+					ControlGroup = 178,
+					Default = 0,
+				},
+				Input242 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "MidTonesBlueOutputHigh",
+					ControlGroup = 178,
+					Default = 1,
+				},
+				Input243 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input244 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input245 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input246 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input247 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input248 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBLow",
+					ControlGroup = 184,
+					Default = 0,
+				},
+				Input249 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBMid",
+					ControlGroup = 184,
+					Default = 1,
+				},
+				Input250 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBHigh",
+					ControlGroup = 184,
+					Default = 1,
+				},
+				Input251 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBOutputLow",
+					ControlGroup = 185,
+					Default = 0,
+				},
+				Input252 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRGBOutputHigh",
+					ControlGroup = 185,
+					Default = 1,
+				},
+				Input253 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedContrast",
+					Name = "对比度",
+					Default = 1,
+				},
+				Input254 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedGain",
+					Name = "增益",
+					Default = 1,
+				},
+				Input255 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedLift",
+					Name = "提升",
+					Default = 0,
+				},
+				Input256 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedGamma",
+					Name = "伽马",
+					Default = 1,
+				},
+				Input257 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedBrightness",
+					Name = "亮度",
+					Default = 0,
+				},
+				Input258 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedLow",
+					ControlGroup = 191,
+					Default = 0,
+				},
+				Input259 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedMid",
+					ControlGroup = 191,
+					Default = 1,
+				},
+				Input260 = InstanceInput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "HighlightsRedHigh",
+					ControlGroup = 191,
+					Default = 1,
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Merge3_2_1",
+					Source = "Output",
+				},
+				MainOutput3 = InstanceOutput {
+					SourceOp = "Glow2_1_1",
+					Source = "Output",
+				},
+				MainOutput5 = InstanceOutput {
+					SourceOp = "ColorCorrector1_1_2",
+					Source = "Output",
+				},
+				MainOutput4 = InstanceOutput {
+					SourceOp = "Glow2_2",
+					Source = "Output",
+				},
+				MainOutput2 = InstanceOutput {
+					SourceOp = "Text1_1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 399.882, -213.924 } },
+			Tools = ordered() {
+				Merge3_2_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge5_2_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Glow1_1_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 139.758 } },
+				},
+				Merge5_2_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge2_2_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "ColorCorrector1_1_1_1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 139.758 } },
+				},
+				Glow1_1_1 = Glow {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						XGlowSize = Input { Value = 3.1, },
+						Input = Input {
+							SourceOp = "Text1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 106.758 } },
+				},
+				ColorCorrector1_1_1_1 = ColorCorrector {
+					CtrlWShown = false,
+					Inputs = {
+						WheelTintAngle1 = Input { Value = 0.1480161028443, },
+						WheelTintLength1 = Input { Value = 1, },
+						ColorRanges = Input {
+							Value = ColorCurves {
+								Curves = {
+									{
+										Points = {
+											{ 0, 1 },
+											{ 0.4, 0.2 },
+											{ 0.6, 0 },
+											{ 1, 0 }
+										}
+									},
+									{
+										Points = {
+											{ 0, 0 },
+											{ 0.4, 0 },
+											{ 0.6, 0.2 },
+											{ 1, 1 }
+										}
+									}
+								}
+							},
+						},
+						HistogramIgnoreTransparent = Input { Value = 1, },
+						Input = Input {
+							SourceOp = "Glow2_1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 106.758 } },
+				},
+				Merge2_2_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Merge4_3_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Glow1_2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -0.000488281, 139.758 } },
+				},
+				Glow1_2 = Glow {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						XGlowSize = Input { Value = 5.5, },
+						Input = Input {
+							SourceOp = "Background2_1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { -0.000488281, 106.758 } },
+				},
+				Background2_1_1 = Background {
+					CtrlWShown = false,
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle2_1",
+							Source = "Mask",
+						},
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftRed = Input { Value = 1, },
+						TopLeftGreen = Input { Value = 1, },
+						TopLeftBlue = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -0.000488281, 73.7576 } },
+				},
+				Text1_1 = TextPlus {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input { Value = { 0.5, 0.665879574970484 }, },
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "Happy Sunday", },
+						Font = Input { Value = "Tillana", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.1643, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 73.7576 } },
+				},
+				Glow2_1_1 = Glow {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						Input = Input {
+							SourceOp = "Text1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 73.7576 } },
+				},
+				Glow2_2 = Glow {
+					CtrlWShown = false,
+					Inputs = {
+						Blend = Input { Value = 0.2, },
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						Input = Input {
+							SourceOp = "Background2_1_1",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { -110, 73.7576 } },
+				},
+				Merge4_3_1 = Merge {
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Background1_2_1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "ColorCorrector1_1_2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -110, 139.758 } },
+				},
+				ColorCorrector1_1_2 = ColorCorrector {
+					CtrlWShown = false,
+					Inputs = {
+						WheelTintAngle1 = Input { Value = 1.01429968006705, },
+						WheelTintLength1 = Input { Value = 1, },
+						ColorRanges = Input {
+							Value = ColorCurves {
+								Curves = {
+									{
+										Points = {
+											{ 0, 1 },
+											{ 0.4, 0.2 },
+											{ 0.6, 0 },
+											{ 1, 0 }
+										}
+									},
+									{
+										Points = {
+											{ 0, 0 },
+											{ 0.4, 0 },
+											{ 0.6, 0.2 },
+											{ 1, 1 }
+										}
+									}
+								}
+							},
+						},
+						HistogramIgnoreTransparent = Input { Value = 1, },
+						Input = Input {
+							SourceOp = "Glow2_2",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { -110, 106.758 } },
+				},
+				Rectangle2_1 = RectangleMask {
+					CtrlWShown = false,
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "Rectangle1_1",
+							Source = "Mask",
+						},
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1080, },
+						MaskHeight = Input { Value = 1920, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 0.5, 0.807037210778294 }, },
+						Width = Input { Value = 0.1172106824926, },
+						Height = Input { Value = 0.0123025782838, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -0.000488281, 40.7576 } },
+				},
+				Rectangle1_1 = RectangleMask {
+					CtrlWShown = false,
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						MaskWidth = Input { Value = 1080, },
+						MaskHeight = Input { Value = 1920, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 0.5, 0.78979790062149 }, },
+						Width = Input { Value = 0.0255964674714, },
+						Height = Input { Value = 0.1014806401683, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -0.000488281, 7.75758 } },
+				},
+				Background1_2_1 = Background {
+					CtrlWShown = false,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -220, 139.758 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "MacroTool1"
+}
