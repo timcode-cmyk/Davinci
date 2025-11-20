@@ -1,0 +1,1079 @@
+{
+	Tools = ordered() {
+		AddLogo11_1 = MacroOperator {
+			CtrlWZoom = false,
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "MergeBG_2",
+					Source = "Foreground",
+				},
+				-- Gemini 组
+				LabelGemini = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelGemini",
+				},
+				ShowGemini = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowGemini",
+				},
+				GeminiPos = InstanceInput {
+					SourceOp = "Gemini_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				GeminiSize = InstanceInput {
+					SourceOp = "Gemini_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Vidnoz 组
+				LabelVidnoz = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelVidnoz",
+				},
+				ShowVidnoz = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowVidnoz",
+				},
+				VidnozPos = InstanceInput {
+					SourceOp = "Vidnoz_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				VidnozSize = InstanceInput {
+					SourceOp = "Vidnoz_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Immersity 组
+				LabelImmersity = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelImmersity",
+				},
+				ShowImmersity = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowImmersity",
+				},
+				ImmersityPos = InstanceInput {
+					SourceOp = "Immersity_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				ImmersitySize = InstanceInput {
+					SourceOp = "Immersity_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- HeyGen 组
+				LabelHeyGen = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelHeyGen",
+				},
+				ShowHeyGen = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowHeyGen",
+				},
+				HeyGenPos = InstanceInput {
+					SourceOp = "HeyGen_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				HeyGenSize = InstanceInput {
+					SourceOp = "HeyGen_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Google 组
+				LabelGoogle = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelGoogle",
+				},
+				ShowGoogle = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowGoogle",
+				},
+				GooglePos = InstanceInput {
+					SourceOp = "Google_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				GoogleSize = InstanceInput {
+					SourceOp = "Google_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Dreamai 组
+				LabelDreamai = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelDreamai",
+				},
+				ShowDreamai = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowDreamai",
+				},
+				DreamaiPos = InstanceInput {
+					SourceOp = "Dreamai_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				DreamaiSize = InstanceInput {
+					SourceOp = "Dreamai_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- KlingAI 组
+				LabelKlingAI = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelKlingAI",
+				},
+				ShowKlingAI = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowKlingAI",
+				},
+				KlingAIPos = InstanceInput {
+					SourceOp = "KlingAI_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				KlingAISize = InstanceInput {
+					SourceOp = "KlingAI_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- VEO 组
+				LabelVEO = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelVEO",
+				},
+				ShowVEO = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowVEO",
+				},
+				VEOPos = InstanceInput {
+					SourceOp = "VEO_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				VEOSize = InstanceInput {
+					SourceOp = "VEO_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Hailuo 组
+				LabelHailuo = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelHailuo",
+				},
+				ShowHailuo = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowHailuo",
+				},
+				HailuoPos = InstanceInput {
+					SourceOp = "Hailuo_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				HailuoSize = InstanceInput {
+					SourceOp = "Hailuo_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Keling16pro 组
+				LabelKeling16pro = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelKeling16pro",
+				},
+				ShowKeling16pro = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowKeling16pro",
+				},
+				Keling16proPos = InstanceInput {
+					SourceOp = "Keling16pro_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				Keling16proSize = InstanceInput {
+					SourceOp = "Keling16pro_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- Vidu 组
+				LabelVidu = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelVidu",
+				},
+				ShowVidu = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowVidu",
+				},
+				ViduPos = InstanceInput {
+					SourceOp = "vidu_2",
+					Source = "Center",
+					Name = "位置",
+				},
+				ViduSize = InstanceInput {
+					SourceOp = "vidu_2",
+					Source = "Size",
+					Default = 1,
+					Name = "大小",
+				},
+				-- 模糊组
+				LabelBlur = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelBlur",
+				},
+				ShowBlur = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowBlur",
+				},
+				BlurAmount = InstanceInput {
+					SourceOp = "Blur_2",
+					Source = "XBlurSize",
+					Default = 26,
+					Name = "模糊强度",
+				},
+				BlurMaskSoftEdge = InstanceInput {
+					SourceOp = "Rectangle_Blur_2",
+					Source = "SoftEdge",
+					Default = 0.0504,
+					Name = "羽化边缘",
+				},
+				BlurMaskCenter = InstanceInput {
+					SourceOp = "Rectangle_Blur_2",
+					Source = "Center",
+					Name = "遮罩中心",
+				},
+				BlurMaskWidth = InstanceInput {
+					SourceOp = "Rectangle_Blur_2",
+					Source = "Width",
+					Default = 0.5,
+					Name = "遮罩宽度",
+				},
+				BlurMaskHeight = InstanceInput {
+					SourceOp = "Rectangle_Blur_2",
+					Source = "Height",
+					Default = 0.0811391223156,
+					Name = "遮罩高度",
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Gemini_2",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 412.074, 236.124 } },
+			Tools = ordered() {
+				PipeRouter1 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						Input = Input {
+							SourceOp = "MergeBG_2",
+							Source = "Foreground",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -165, 41.2576 } },
+					UserControls = ordered() {
+						-- Gemini 标签和开关
+						LabelGemini = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Gemini",
+						},
+						ShowGemini = {
+							INP_Integer = true,
+							LINKE_Label = "Gemini",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Vidnoz 标签和开关
+						LabelVidnoz = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Vidnoz",
+						},
+						ShowVidnoz = {
+							INP_Integer = true,
+							LINKE_Label = "Vidnoz",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Immersity 标签和开关
+						LabelImmersity = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Immersity",
+						},
+						ShowImmersity = {
+							INP_Integer = true,
+							LINKE_Label = "Immersity",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- HeyGen 标签和开关
+						LabelHeyGen = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "HeyGen",
+						},
+						ShowHeyGen = {
+							INP_Integer = true,
+							LINKE_Label = "HeyGen",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Google 标签和开关
+						LabelGoogle = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Google",
+						},
+						ShowGoogle = {
+							INP_Integer = true,
+							LINKE_Label = "Google",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Dreamai 标签和开关
+						LabelDreamai = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Dreamai",
+						},
+						ShowDreamai = {
+							INP_Integer = true,
+							LINKE_Label = "Dreamai",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- KlingAI 标签和开关
+						LabelKlingAI = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "KlingAI",
+						},
+						ShowKlingAI = {
+							INP_Integer = true,
+							LINKE_Label = "KlingAI",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- VEO 标签和开关
+						LabelVEO = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "VEO",
+						},
+						ShowVEO = {
+							INP_Integer = true,
+							LINKE_Label = "VEO",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Hailuo 标签和开关
+						LabelHailuo = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Hailuo",
+						},
+						ShowHailuo = {
+							INP_Integer = true,
+							LINKE_Label = "Hailuo",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Keling16pro 标签和开关
+						LabelKeling16pro = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "Keling16pro",
+						},
+						ShowKeling16pro = {
+							INP_Integer = true,
+							LINKE_Label = "Keling16pro",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						-- Vidu 标签和开关
+						LabelVidu = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 1,
+							LINKS_Name = "vidu",
+						},
+						ShowVidu = {
+							INP_Integer = true,
+							LINKE_Label = "vidu",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 1,
+						},
+						-- Blur 标签和开关
+						LabelBlur = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 5,
+							INP_Default = 1,
+							LINKS_Name = "Blur",
+						},
+						ShowBlur = {
+							INP_Integer = true,
+							LINKE_Label = "Blur",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 1,
+						},
+					}
+				},
+				Loader1_3_1_4 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/Gemini.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 227, 205.005 } },
+				},
+				Loader1_3_1_2_1_3_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/immersity.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 206.811 } },
+				},
+				Loader1_3_1_2_1_4_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/vidnoz.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 101.835, 206.811 } },
+				},
+				Loader1_3_1_2_1_2_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/HeyGen.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -118.165, 206.811 } },
+				},
+				Loader1_3_1_2_1_1_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/google.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -228.165, 206.811 } },
+				},
+				Loader1_3_1_1_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/Dreamai.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -118.165, 107.811 } },
+				},
+				Loader1_3_1_2_3 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/Veo.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 107.811 } },
+				},
+				Loader1_3_1_2_1_6 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/Kling.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 101.835, 107.811 } },
+				},
+				Loader1_1_1_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/keling16pro.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 101.835, 8.81058 } },
+				},
+				Loader1_4_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/vidu.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -118.165, 8.81058 } },
+				},
+				Loader1_2_1_2 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/Hailuo.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 8.81058 } },
+				},
+				Gemini_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowGemini", },
+						Background = Input {
+							SourceOp = "Vidnoz_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_4",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.942291167604696, 0.104272517735988 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 223.19, 240.705 } },
+				},
+				Vidnoz_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowVidnoz", },
+						Background = Input {
+							SourceOp = "Immersity_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_2_1_4_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.917401613838388, 0.0596199421907917 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 101.835, 239.811 } },
+				},
+				Immersity_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowImmersity", },
+						Background = Input {
+							SourceOp = "HeyGen_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_2_1_3_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.821635178737724, 0.0564580713818621 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 239.811 } },
+				},
+				HeyGen_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowHeyGen", },
+						Background = Input {
+							SourceOp = "Google_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_2_1_2_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.885496959447021, 0.0846093318860637 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -118.165, 239.811 } },
+				},
+				Dreamai_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowDreamai", },
+						Background = Input {
+							SourceOp = "Keling16pro_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_1_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.822869955156951, 0.0420168067226891 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -118.165, 140.811 } },
+				},
+				KlingAI_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowKlingAI", },
+						Background = Input {
+							SourceOp = "VEO_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_2_1_6",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.841799480455424, 0.0459538697011898 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 101.835, 140.811 } },
+				},
+				VEO_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowVEO", },
+						Background = Input {
+							SourceOp = "Dreamai_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_2_3",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.809306483256545, 0.020289833753304 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 140.811 } },
+				},
+				Google_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowGoogle", },
+						Background = Input {
+							SourceOp = "KlingAI_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_3_1_2_1_1_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.861216956183579, 0.0976345419700974 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -228.165, 239.811 } },
+				},
+				BG_2 = Background {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						GlobalOut = Input { Value = 149, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -228.165, 140.811 } },
+				},
+				MergeBG_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Background = Input {
+							SourceOp = "BG_2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -228.165, 107.811 } },
+				},
+				Hailuo_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowHailuo", },
+						Background = Input {
+							SourceOp = "vidu_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_2_1_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.830904315263592, 0.067436974789916 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 41.8106 } },
+				},
+				Blur_2 = Blur {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowBlur", },
+						EffectMask = Input {
+							SourceOp = "Rectangle_Blur_2",
+							Source = "Mask",
+						},
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						XBlurSize = Input { Value = 26, },
+						Input = Input {
+							SourceOp = "MergeBG_2",
+							Source = "Output",
+						}
+					},
+					ViewInfo = OperatorInfo { Pos = { -228.165, 41.8106 } },
+				},
+				vidu_2 = Merge {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowVidu", },
+						Background = Input {
+							SourceOp = "Blur_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_4_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.904343972731647, 0.0187625636191097 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -118.165, 41.8106 } },
+				},
+				Keling16pro_2 = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowKeling16pro", },
+						Background = Input {
+							SourceOp = "Hailuo_2",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1_1_1_2",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.826593775386541, 0.0668251861314597 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 101.835, 41.8106 } },
+				},
+				Rectangle_Blur_2 = RectangleMask {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						SoftEdge = Input { Value = 0.0504, },
+						MaskWidth = Input { Value = 1080, },
+						MaskHeight = Input { Value = 1920, },
+						PixelAspect = Input { Value = { 1, 1 }, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						ClippingMode = Input { Value = FuID { "None" }, },
+						Center = Input { Value = { 0.792537313432836, 0.035251676428147 }, },
+						Height = Input { Value = 0.0811391223156, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -228.165, 8.81058 } },
+				},
+				Vector1 = Vector {
+					CtrlWZoom = false,
+					Inputs = {
+						Distance = Input {
+							SourceOp = "ResolveParameter1",
+							Source = "Value",
+						},
+						ImageAspect = Input { Value = 1.777778, }
+					},
+				},
+				ResolveParameter1 = ResolveParameter {
+					Inputs = {
+						Scale = Input { Value = 0.1, }
+					},
+				}
+			},
+			UserControls = ordered() {
+				UIManagerButton = {
+					LINKID_DataType = "Number",
+					INP_External = false,
+					INPID_InputControl = "LabelControl",
+					BTNCS_Execute = "",
+					IC_ControlPage = -1,
+					INP_Passive = true,
+					LINKS_Name = "Utility Tools",
+				},
+			
+			},
+		},
+	},
+	ActiveTool = "AddLogo11_1",
+}

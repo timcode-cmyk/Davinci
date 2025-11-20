@@ -70,8 +70,7 @@
 							SourceOp = "Loader1",
 							Source = "Output",
 						},
-						Center = Input { Value = { 0.072742, 0.043618573267485 }, },
-						Size = Input { Value = 0.715, },
+						Center = Input { Value = { 0.917401613838388, 0.0596199421907917 }, },
 						PerformDepthMerge = Input { Value = 0, }
 					},
 					ViewInfo = OperatorInfo { Pos = { 139.108, 49.5 } },
