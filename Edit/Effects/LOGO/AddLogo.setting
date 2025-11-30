@@ -1,10 +1,10 @@
 {
 	Tools = ordered() {
-		AddLogo11_1 = MacroOperator {
+		AddLogo = MacroOperator {
 			CtrlWZoom = false,
 			Inputs = ordered() {
 				MainInput1 = InstanceInput {
-					SourceOp = "MergeBG_2",
+					SourceOp = "MergeBG",
 					Source = "Foreground",
 				},
 				-- Gemini 组
@@ -17,12 +17,12 @@
 					Source = "ShowGemini",
 				},
 				GeminiPos = InstanceInput {
-					SourceOp = "Gemini_2",
+					SourceOp = "Gemini",
 					Source = "Center",
 					Name = "位置",
 				},
 				GeminiSize = InstanceInput {
-					SourceOp = "Gemini_2",
+					SourceOp = "Gemini",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -37,12 +37,12 @@
 					Source = "ShowVidnoz",
 				},
 				VidnozPos = InstanceInput {
-					SourceOp = "Vidnoz_2",
+					SourceOp = "Vidnoz",
 					Source = "Center",
 					Name = "位置",
 				},
 				VidnozSize = InstanceInput {
-					SourceOp = "Vidnoz_2",
+					SourceOp = "Vidnoz",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -57,12 +57,12 @@
 					Source = "ShowImmersity",
 				},
 				ImmersityPos = InstanceInput {
-					SourceOp = "Immersity_2",
+					SourceOp = "Immersity",
 					Source = "Center",
 					Name = "位置",
 				},
 				ImmersitySize = InstanceInput {
-					SourceOp = "Immersity_2",
+					SourceOp = "Immersity",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -77,12 +77,12 @@
 					Source = "ShowHeyGen",
 				},
 				HeyGenPos = InstanceInput {
-					SourceOp = "HeyGen_2",
+					SourceOp = "HeyGen",
 					Source = "Center",
 					Name = "位置",
 				},
 				HeyGenSize = InstanceInput {
-					SourceOp = "HeyGen_2",
+					SourceOp = "HeyGen",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -97,12 +97,12 @@
 					Source = "ShowGoogle",
 				},
 				GooglePos = InstanceInput {
-					SourceOp = "Google_2",
+					SourceOp = "Google",
 					Source = "Center",
 					Name = "位置",
 				},
 				GoogleSize = InstanceInput {
-					SourceOp = "Google_2",
+					SourceOp = "Google",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -117,15 +117,26 @@
 					Source = "ShowDreamai",
 				},
 				DreamaiPos = InstanceInput {
-					SourceOp = "Dreamai_2",
+					SourceOp = "Dreamai",
 					Source = "Center",
 					Name = "位置",
 				},
 				DreamaiSize = InstanceInput {
-					SourceOp = "Dreamai_2",
+					SourceOp = "Dreamai",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
+				},
+				DreamAIIPos = InstanceInput {
+					SourceOp = "DreamAII",
+					Source = "Center",
+					Name = "AI位置",
+				},
+				DreamAIISize = InstanceInput {
+					SourceOp = "DreamAII",
+					Source = "Size",
+					Default = 1,
+					Name = "AI大小",
 				},
 				-- KlingAI 组
 				LabelKlingAI = InstanceInput {
@@ -137,12 +148,12 @@
 					Source = "ShowKlingAI",
 				},
 				KlingAIPos = InstanceInput {
-					SourceOp = "KlingAI_2",
+					SourceOp = "KlingAI",
 					Source = "Center",
 					Name = "位置",
 				},
 				KlingAISize = InstanceInput {
-					SourceOp = "KlingAI_2",
+					SourceOp = "KlingAI",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -157,12 +168,12 @@
 					Source = "ShowVEO",
 				},
 				VEOPos = InstanceInput {
-					SourceOp = "VEO_2",
+					SourceOp = "VEO",
 					Source = "Center",
 					Name = "位置",
 				},
 				VEOSize = InstanceInput {
-					SourceOp = "VEO_2",
+					SourceOp = "VEO",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -177,12 +188,12 @@
 					Source = "ShowHailuo",
 				},
 				HailuoPos = InstanceInput {
-					SourceOp = "Hailuo_2",
+					SourceOp = "Hailuo",
 					Source = "Center",
 					Name = "位置",
 				},
 				HailuoSize = InstanceInput {
-					SourceOp = "Hailuo_2",
+					SourceOp = "Hailuo",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -197,12 +208,12 @@
 					Source = "ShowKeling16pro",
 				},
 				Keling16proPos = InstanceInput {
-					SourceOp = "Keling16pro_2",
+					SourceOp = "Keling16pro",
 					Source = "Center",
 					Name = "位置",
 				},
 				Keling16proSize = InstanceInput {
-					SourceOp = "Keling16pro_2",
+					SourceOp = "Keling16pro",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -217,12 +228,12 @@
 					Source = "ShowVidu",
 				},
 				ViduPos = InstanceInput {
-					SourceOp = "vidu_2",
+					SourceOp = "vidu",
 					Source = "Center",
 					Name = "位置",
 				},
 				ViduSize = InstanceInput {
-					SourceOp = "vidu_2",
+					SourceOp = "vidu",
 					Source = "Size",
 					Default = 1,
 					Name = "大小",
@@ -237,30 +248,30 @@
 					Source = "ShowBlur",
 				},
 				BlurAmount = InstanceInput {
-					SourceOp = "Blur_2",
+					SourceOp = "Blur",
 					Source = "XBlurSize",
 					Default = 26,
 					Name = "模糊强度",
 				},
 				BlurMaskSoftEdge = InstanceInput {
-					SourceOp = "Rectangle_Blur_2",
+					SourceOp = "Rectangle_Blur",
 					Source = "SoftEdge",
 					Default = 0.0504,
 					Name = "羽化边缘",
 				},
 				BlurMaskCenter = InstanceInput {
-					SourceOp = "Rectangle_Blur_2",
+					SourceOp = "Rectangle_Blur",
 					Source = "Center",
 					Name = "遮罩中心",
 				},
 				BlurMaskWidth = InstanceInput {
-					SourceOp = "Rectangle_Blur_2",
+					SourceOp = "Rectangle_Blur",
 					Source = "Width",
 					Default = 0.5,
 					Name = "遮罩宽度",
 				},
 				BlurMaskHeight = InstanceInput {
-					SourceOp = "Rectangle_Blur_2",
+					SourceOp = "Rectangle_Blur",
 					Source = "Height",
 					Default = 0.0811391223156,
 					Name = "遮罩高度",
@@ -268,7 +279,7 @@
 			},
 			Outputs = {
 				MainOutput1 = InstanceOutput {
-					SourceOp = "Gemini_2",
+					SourceOp = "Gemini",
 					Source = "Output",
 				}
 			},
@@ -278,7 +289,7 @@
 					CtrlWShown = false,
 					Inputs = {
 						Input = Input {
-							SourceOp = "MergeBG_2",
+							SourceOp = "MergeBG",
 							Source = "Foreground",
 						},
 					},
@@ -373,7 +384,7 @@
 						LabelDreamai = {
 							LBLC_DropDownButton = true,
 							INPID_InputControl = "LabelControl",
-							LBLC_NumInputs = 3,
+							LBLC_NumInputs = 5,
 							INP_Default = 0,
 							LINKS_Name = "Dreamai",
 						},
@@ -490,7 +501,7 @@
 						},
 					}
 				},
-				Loader1_3_1_4 = Loader {
+				LoaderGemini = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -517,7 +528,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 227, 205.005 } },
 				},
-				Loader1_3_1_2_1_3_2 = Loader {
+				LoaderImmersity = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -544,7 +555,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -8.16502, 206.811 } },
 				},
-				Loader1_3_1_2_1_4_2 = Loader {
+				LoaderVidnoz = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -571,7 +582,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 101.835, 206.811 } },
 				},
-				Loader1_3_1_2_1_2_2 = Loader {
+				LoaderHeyGen = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -598,7 +609,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -118.165, 206.811 } },
 				},
-				Loader1_3_1_2_1_1_2 = Loader {
+				LoaderGoogle = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -625,7 +636,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -228.165, 206.811 } },
 				},
-				Loader1_3_1_1_2 = Loader {
+				LoaderDreamai = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -652,7 +663,34 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -118.165, 107.811 } },
 				},
-				Loader1_3_1_2_3 = Loader {
+				LoaderDreamAII = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/DreamAII.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 107.811 } },
+				},
+				LoaderVEO = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -677,9 +715,9 @@
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
 					},
-					ViewInfo = OperatorInfo { Pos = { -8.16502, 107.811 } },
+					ViewInfo = OperatorInfo { Pos = { 101.835, 107.811 } },
 				},
-				Loader1_3_1_2_1_6 = Loader {
+				LoaderKlingAI = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -704,9 +742,9 @@
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
 					},
-					ViewInfo = OperatorInfo { Pos = { 101.835, 107.811 } },
+					ViewInfo = OperatorInfo { Pos = { 223.19, 107.811 } },
 				},
-				Loader1_1_1_2 = Loader {
+				LoaderKeling16pro = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -733,7 +771,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 101.835, 8.81058 } },
 				},
-				Loader1_4_2 = Loader {
+				Loadervidu = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -760,7 +798,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -118.165, 8.81058 } },
 				},
-				Loader1_2_1_2 = Loader {
+				LoaderHailuo = Loader {
 					Clips = {
 						Clip {
 							ID = "Clip1",
@@ -787,17 +825,17 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -8.16502, 8.81058 } },
 				},
-				Gemini_2 = Merge {
+				Gemini = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowGemini", },
 						Background = Input {
-							SourceOp = "Vidnoz_2",
+							SourceOp = "Vidnoz",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_4",
+							SourceOp = "LoaderGemini",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.942291167604696, 0.104272517735988 }, },
@@ -805,17 +843,17 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 223.19, 240.705 } },
 				},
-				Vidnoz_2 = Merge {
+				Vidnoz = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowVidnoz", },
 						Background = Input {
-							SourceOp = "Immersity_2",
+							SourceOp = "Immersity",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_2_1_4_2",
+							SourceOp = "LoaderVidnoz",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.917401613838388, 0.0596199421907917 }, },
@@ -823,17 +861,17 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 101.835, 239.811 } },
 				},
-				Immersity_2 = Merge {
+				Immersity = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowImmersity", },
 						Background = Input {
-							SourceOp = "HeyGen_2",
+							SourceOp = "HeyGen",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_2_1_3_2",
+							SourceOp = "LoaderImmersity",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.821635178737724, 0.0564580713818621 }, },
@@ -841,17 +879,17 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -8.16502, 239.811 } },
 				},
-				HeyGen_2 = Merge {
+				HeyGen = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowHeyGen", },
 						Background = Input {
-							SourceOp = "Google_2",
+							SourceOp = "Google",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_2_1_2_2",
+							SourceOp = "LoaderHeyGen",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.885496959447021, 0.0846093318860637 }, },
@@ -859,17 +897,17 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -118.165, 239.811 } },
 				},
-				Dreamai_2 = Merge {
+				Dreamai = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowDreamai", },
 						Background = Input {
-							SourceOp = "Keling16pro_2",
+							SourceOp = "Keling16pro",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_1_2",
+							SourceOp = "LoaderDreamai",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.822869955156951, 0.0420168067226891 }, },
@@ -877,53 +915,71 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -118.165, 140.811 } },
 				},
-				KlingAI_2 = Merge {
+				DreamAII = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowDreamai", },
+						Background = Input {
+							SourceOp = "Dreamai",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "LoaderDreamAII",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.0530891955892554, 0.950116009280742 }, },
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -8.16502, 140.811 } },
+				},
+				KlingAI = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowKlingAI", },
 						Background = Input {
-							SourceOp = "VEO_2",
+							SourceOp = "VEO",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_2_1_6",
+							SourceOp = "LoaderKlingAI",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.841799480455424, 0.0459538697011898 }, },
 						PerformDepthMerge = Input { Value = 0, }
 					},
-					ViewInfo = OperatorInfo { Pos = { 101.835, 140.811 } },
+					ViewInfo = OperatorInfo { Pos = { 223.19, 140.811 } },
 				},
-				VEO_2 = Merge {
+				VEO = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowVEO", },
 						Background = Input {
-							SourceOp = "Dreamai_2",
+							SourceOp = "DreamAII",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_2_3",
+							SourceOp = "LoaderVEO",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.809306483256545, 0.020289833753304 }, },
 						PerformDepthMerge = Input { Value = 0, }
 					},
-					ViewInfo = OperatorInfo { Pos = { -8.16502, 140.811 } },
+					ViewInfo = OperatorInfo { Pos = { 101.835, 140.811 } },
 				},
-				Google_2 = Merge {
+				Google = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowGoogle", },
 						Background = Input {
-							SourceOp = "KlingAI_2",
+							SourceOp = "KlingAI",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_3_1_2_1_1_2",
+							SourceOp = "LoaderGoogle",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.861216956183579, 0.0976345419700974 }, },
@@ -931,7 +987,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -228.165, 239.811 } },
 				},
-				BG_2 = Background {
+				BG = Background {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
@@ -944,29 +1000,29 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -228.165, 140.811 } },
 				},
-				MergeBG_2 = Merge {
+				MergeBG = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Background = Input {
-							SourceOp = "BG_2",
+							SourceOp = "BG",
 							Source = "Output",
 						},
 						PerformDepthMerge = Input { Value = 0, }
 					},
 					ViewInfo = OperatorInfo { Pos = { -228.165, 107.811 } },
 				},
-				Hailuo_2 = Merge {
+				Hailuo = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowHailuo", },
 						Background = Input {
-							SourceOp = "vidu_2",
+							SourceOp = "vidu",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_2_1_2",
+							SourceOp = "LoaderHailuo",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.830904315263592, 0.067436974789916 }, },
@@ -974,36 +1030,36 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -8.16502, 41.8106 } },
 				},
-				Blur_2 = Blur {
+				Blur = Blur {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowBlur", },
 						EffectMask = Input {
-							SourceOp = "Rectangle_Blur_2",
+							SourceOp = "Rectangle_Blur",
 							Source = "Mask",
 						},
 						Filter = Input { Value = FuID { "Fast Gaussian" }, },
 						XBlurSize = Input { Value = 26, },
 						Input = Input {
-							SourceOp = "MergeBG_2",
+							SourceOp = "MergeBG",
 							Source = "Output",
 						}
 					},
 					ViewInfo = OperatorInfo { Pos = { -228.165, 41.8106 } },
 				},
-				vidu_2 = Merge {
+				vidu = Merge {
 					CtrlWZoom = false,
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowVidu", },
 						Background = Input {
-							SourceOp = "Blur_2",
+							SourceOp = "Blur",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_4_2",
+							SourceOp = "Loadervidu",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.904343972731647, 0.0187625636191097 }, },
@@ -1011,17 +1067,17 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { -118.165, 41.8106 } },
 				},
-				Keling16pro_2 = Merge {
+				Keling16pro = Merge {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
 						Blend = Input { Expression = "PipeRouter1.ShowKeling16pro", },
 						Background = Input {
-							SourceOp = "Hailuo_2",
+							SourceOp = "Hailuo",
 							Source = "Output",
 						},
 						Foreground = Input {
-							SourceOp = "Loader1_1_1_2",
+							SourceOp = "LoaderKeling16pro",
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.826593775386541, 0.0668251861314597 }, },
@@ -1029,7 +1085,7 @@
 					},
 					ViewInfo = OperatorInfo { Pos = { 101.835, 41.8106 } },
 				},
-				Rectangle_Blur_2 = RectangleMask {
+				Rectangle_Blur = RectangleMask {
 					CtrlWShown = false,
 					NameSet = true,
 					Inputs = {
@@ -1075,5 +1131,5 @@
 			},
 		},
 	},
-	ActiveTool = "AddLogo11_1",
+	ActiveTool = "AddLogo",
 }

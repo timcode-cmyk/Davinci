@@ -27,7 +27,7 @@
 					Clips = {
 						Clip {
 							ID = "Clip1",
-							Filename = "Setting:Media/Veo.png",
+							Filename = "Setting:Media/google.png",
 							FormatID = "PNGFormat",
 							StartFrame = -1,
 							LengthSetManually = true,

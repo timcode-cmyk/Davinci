@@ -30,10 +30,10 @@
 							Filename = "Setting:Media/sora/000.png",
                             FormatID = "PNGFormat",
                             StartFrame = 2,
-                            Length = 150,
+                            Length = 148,
                             LengthSetManually = true,
                             TrimIn = 0,
-                            TrimOut = 149,
+                            TrimOut = 147,
                             ExtendFirst = 0,
                             ExtendLast = 0,
                             Loop = 0,
@@ -41,7 +41,7 @@
                             Depth = 0,
                             TimeCode = 0,
                             GlobalStart = 0,
-                            GlobalEnd = 149
+                            GlobalEnd = 147
 						}
 					},
                     CtrlWZoom = false,

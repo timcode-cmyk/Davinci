@@ -30,10 +30,10 @@
 							Filename = "Setting:Media/PixVerse/000.png",
                             FormatID = "PNGFormat",
                             StartFrame = 2,
-                            Length = 252,
+                            Length = 249,
                             LengthSetManually = true,
                             TrimIn = 0,
-                            TrimOut = 251,
+                            TrimOut = 248,
                             ExtendFirst = 0,
                             ExtendLast = 0,
                             Loop = 0,
@@ -41,7 +41,7 @@
                             Depth = 0,
                             TimeCode = 0,
                             GlobalStart = 0,
-                            GlobalEnd = 251
+                            GlobalEnd = 248
 						}
 					},
                     CtrlWZoom = false,
