@@ -1,27 +1,26 @@
 {
 	Tools = ordered() {
-		Group1 = GroupOperator {
-			CtrlWZoom = false,
+		Hailuo = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Merge1",
+					Source = "Center",
+					Name = "中心",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Merge1",
+					Source = "Size",
+					Name = "大小",
+					Default = 1,
+				}
+			},
 			Outputs = {
-				Output1 = InstanceOutput {
+				MainOutput1 = InstanceOutput {
 					SourceOp = "Merge1",
 					Source = "Output",
 				}
 			},
-			ViewInfo = GroupInfo {
-				Pos = { 88.7749, -34.697 },
-				Flags = {
-					AllowPan = false,
-					ConnectedSnap = true,
-					AutoSnap = true,
-					RemoveRouters = true
-				},
-				Size = { 130.667, 138.288, 12.6667, 12.1212 },
-				Direction = "Horizontal",
-				PipeStyle = "Direct",
-				Scale = 1,
-				Offset = { -84.1082, 8.0303 }
-			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
 			Tools = ordered() {
 				Loader1 = Loader {
 					Clips = {
@@ -43,24 +42,16 @@
 							GlobalEnd = 0
 						}
 					},
+					CtrlWShown = false,
 					Inputs = {
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
 					},
-					ViewInfo = OperatorInfo { Pos = { 139.108, 19.6362 } },
-				},
-				Background1 = Background {
-					Inputs = {
-						GlobalOut = Input { Value = 149, },
-						Width = Input { Value = 1080, },
-						Height = Input { Value = 1920, },
-						UseFrameFormatSettings = Input { Value = 1, },
-						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
-						TopLeftAlpha = Input { Value = 0, }
-					},
-					ViewInfo = OperatorInfo { Pos = { 139.108, 82.2273 } },
+					ViewInfo = OperatorInfo { Pos = { 550, 148.5 } },
 				},
 				Merge1 = Merge {
+					CtrlWZoom = false,
+					CtrlWShown = false,
 					Inputs = {
 						Background = Input {
 							SourceOp = "Background1",
@@ -71,12 +62,22 @@
 							Source = "Output",
 						},
 						Center = Input { Value = { 0.830904315263592, 0.067436974789916 }, },
-						PerformDepthMerge = Input { Value = 0, }
 					},
-					ViewInfo = OperatorInfo { Pos = { 139.108, 49.5 } },
+					ViewInfo = OperatorInfo { Pos = { 550, 181.5 } },
+				},
+				Background1 = Background {
+					CtrlWShown = false,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 181.5 } },
 				}
 			},
 		}
 	},
-	ActiveTool = "Group1"
+	ActiveTool = "Hailuo"
 }

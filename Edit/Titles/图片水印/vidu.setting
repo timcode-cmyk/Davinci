@@ -80,3 +80,87 @@
 	},
 	ActiveTool = "Group1"
 }
+
+{
+	Tools = ordered() {
+		vidu = MacroOperator {
+			Inputs = ordered() {
+				Input1 = InstanceInput {
+					SourceOp = "Merge1",
+					Source = "Center",
+					Name = "中心",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Merge1",
+					Source = "Size",
+					Name = "大小",
+					Default = 1,
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Merge1",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				Loader1 = Loader {
+					Clips = {
+						Clip {
+							ID = "Clip1",
+							Filename = "Setting:Media/vidu.png",
+							FormatID = "PNGFormat",
+							StartFrame = -1,
+							LengthSetManually = true,
+							TrimIn = 0,
+							TrimOut = 0,
+							ExtendFirst = 0,
+							ExtendLast = 0,
+							Loop = 0,
+							AspectMode = 0,
+							Depth = 0,
+							TimeCode = 0,
+							GlobalStart = 0,
+							GlobalEnd = 0
+						}
+					},
+					CtrlWShown = false,
+					Inputs = {
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						["Clip1.PNGFormat.PostMultiply"] = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 550, 148.5 } },
+				},
+				Merge1 = Merge {
+					CtrlWZoom = false,
+					CtrlWShown = false,
+					Inputs = {
+						Background = Input {
+							SourceOp = "Background1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Loader1",
+							Source = "Output",
+						},
+						Center = Input { Value = { 0.826593775386541, 0.0668251861314597 }, },
+					},
+					ViewInfo = OperatorInfo { Pos = { 550, 181.5 } },
+				},
+				Background1 = Background {
+					CtrlWShown = false,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 181.5 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "vidu"
+}
