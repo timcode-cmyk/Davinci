@@ -173,11 +173,6 @@
 					ControlGroup = 3,
 					Default = 1,
 				},
-				HindiBibleSize = InstanceInput {
-					SourceOp = "Perturb2",
-					Source = "Size",
-					Default = 0.045,
-				},
 				HindiBibleStrength = InstanceInput {
 					SourceOp = "Perturb2",
 					Source = "Strength",
@@ -248,7 +243,7 @@
 					SourceOp = "Imagefromai",
 					Source = "Size",
 					Default = 0.0354,
-					MaxScale = 1,
+					MaxScale = 0.5,
 				},
 			},
 			Outputs = {
@@ -616,7 +611,7 @@
 						Rotation3 = Input { Value = 1, },
 						PivotNest3 = Input { Value = 1, },
 						Shear3 = Input { Value = 1, },
-						StyledText = Input { Value = Expression = "PipeRouter1.SUNOStyledText", },
+						StyledText = Input { Expression = "PipeRouter1.SUNOStyledText", },
 						Font = Input { Value = "Open Sans", },
 						Style = Input { Value = "Extrabold", },
 						Size = Input { Value = 0.034, },
