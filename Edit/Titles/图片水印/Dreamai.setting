@@ -125,7 +125,7 @@
 					Inputs = {
 						Width = Input { Value = 1920, },
 						Height = Input { Value = 1080, },
-						UseFrameFormatSettings = Input { Value = 1, },
+						UseFrameFormatSettings = Input { Value = 0, },
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						TopLeftAlpha = Input { Value = 0, }
 					},

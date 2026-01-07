@@ -497,7 +497,7 @@
 					Inputs = {
 						Width = Input { Value = 1920, },
 						Height = Input { Value = 1080, },
-						UseFrameFormatSettings = Input { Value = 1, },
+						UseFrameFormatSettings = Input { Value = 0, },
 						Center = Input {
 							SourceOp = "Perturb1",
 							Source = "Value",
