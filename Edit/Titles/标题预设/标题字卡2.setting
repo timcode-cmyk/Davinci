@@ -1,0 +1,52 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			CtrlWZoom = false,
+            NameSet = true,
+			Inputs = {
+				Softness3 = Input {
+					Value = Number {
+						Value = 1
+					},
+				},
+				GlobalOut = Input { Value = 478, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				Center = Input { Value = { 0.5, 0.904 }, },
+				LineSpacing = Input { Value = 0.954, },
+				TransformShear = Input { Value = 1, },
+				SelectElement = Input { Value = 3, },
+				Select = Input { Value = 3, },
+				Enabled2 = Input { Value = 1, },
+				Enabled4 = Input { Value = 1, },
+				Type1 = Input { Value = 2, },
+				Green1 = Input { Value = 0, },
+				Blue1 = Input { Value = 0, },
+				ShadingGradient1 = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 0.470588235294118, 0, 0.00784313725490196, 1 },
+							[1] = { 1, 0.298039215686275, 0.309803921568627, 1 }
+						}
+					},
+				},
+				StyledText = Input { Value = "Bakit Dumarating pa rin ang Diyablo\nKahit Nananalangin Ka Na? ", },
+				Font = Input { Value = "Impact", },
+				Style = Input { Value = "Regular", },
+				Size = Input { Value = 0.09, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Thickness2 = Input { Value = 0.0764, },
+				OutsideOnly2 = Input { Value = 1, },
+				Green2 = Input { Value = 1, },
+				Blue2 = Input { Value = 1, },
+				Softness2 = Input { Value = 1, },
+				ExtendHorizontal4 = Input { Value = 24.9, },
+				ExtendVertical4 = Input { Value = 0.156, },
+				Blue4 = Input { Value = 0, },
+				Softness4 = Input { Value = 1, }
+			}
+		}
+	}
+}

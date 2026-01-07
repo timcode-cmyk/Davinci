@@ -1,0 +1,37 @@
+{
+	Tools = ordered() {
+		Template = TextPlus {
+			CtrlWZoom = false,
+            NameSet = true,
+			Inputs = {
+				GlobalOut = Input { Value = 478, },
+				Width = Input { Value = 1080, },
+				Height = Input { Value = 1920, },
+				UseFrameFormatSettings = Input { Value = 1, },
+				Center = Input { Value = { 0.5, 0.936 }, },
+				TransformShear = Input { Value = 1, },
+				CharacterShearX = Input { Value = -0.3, },
+				Enabled2 = Input { Value = 1, },
+				Type1 = Input { Value = 2, },
+				ShadingGradient1 = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 0.741176470588235, 0, 0, 1 },
+							[0.945273631840796] = { 1, 0.717647058823529, 0, 1 }
+						}
+					},
+				},
+				StyledText = Input { Value = "Hindi Ito Isang Pelikula", },
+				Font = Input { Value = "Impact", },
+				Style = Input { Value = "Regular", },
+				Size = Input { Value = 0.1251, },
+				VerticalJustificationNew = Input { Value = 3, },
+				HorizontalJustificationNew = Input { Value = 3, },
+				Thickness2 = Input { Value = 0.0717, },
+				Green2 = Input { Value = 1, },
+				Blue2 = Input { Value = 1, },
+				Softness2 = Input { Value = 1, }
+			},
+		}
+	}
+}

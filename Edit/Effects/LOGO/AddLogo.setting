@@ -486,7 +486,7 @@
 						LabelBlur = {
 							LBLC_DropDownButton = true,
 							INPID_InputControl = "LabelControl",
-							LBLC_NumInputs = 5,
+							LBLC_NumInputs = 6,
 							INP_Default = 1,
 							LINKS_Name = "Blur",
 						},
@@ -1125,7 +1125,7 @@
 					BTNCS_Execute = "",
 					IC_ControlPage = -1,
 					INP_Passive = true,
-					LINKS_Name = "Utility Tools",
+					LINKS_Name = "Add Logo",
 				},
 			
 			},

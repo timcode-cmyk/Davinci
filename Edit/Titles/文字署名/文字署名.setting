@@ -1,0 +1,955 @@
+{
+	Tools = ordered() {
+		["文字署名"] = MacroOperator {
+			Inputs = ordered() {
+				--通用样式组
+				LabelGeneral = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelGeneral",
+				},
+				GeneralFont = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Font",
+					ControlGroup = 1,
+					Default = "Open Sans",
+				},
+				GeneralColorR = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Red1Clone",
+					Name = "颜色",
+					ControlGroup = 2,
+					Default = 1,
+				},
+				GeneralColorG = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Green1Clone",
+					ControlGroup = 2,
+					Default = 1,
+				},
+				GeneralColorB = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Blue1Clone",
+					ControlGroup = 2,
+					Default = 1,
+				},
+				GeneralColorA = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Alpha1Clone",
+					ControlGroup = 2,
+					Default = 1,
+				},
+				GeneralSize = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Size",
+					Default = 0.034,
+				},
+
+				-- ZapSplat 组
+				LabelZapSplat = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelZapSplat",
+				},
+				ZapSplatStyledText = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ZapSplatStyledText",
+					Default = "默认文本内容",
+				},
+				ShowZapSplat = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowZapSplat",
+				},
+				ZapSplatPos = InstanceInput {
+					SourceOp = "zapsplatcom",
+					Source = "Center",
+					Name = "位置",
+				},
+
+				--ElevenLabs 组
+				LabelElevenLabs = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelElevenLabs",
+				},
+				ElevenLabsStyledText = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ElevenLabsStyledText",
+				},
+				ShowElevenLabs = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowElevenLabs",
+				},
+				ElevenLabsPos = InstanceInput {
+					SourceOp = "elevenlabsio",
+					Source = "Center",
+					Name = "位置",
+				},
+
+				--Ende 组
+				LabelEndeMusic = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelEndeMusic",
+				},
+				EndeMusicStyledText = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "EndeMusicStyledText",
+				},
+				ShowEndeMusic = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowEndeMusic",
+				},
+				EndeMusicPos = InstanceInput {
+					SourceOp = "ende",
+					Source = "Center",
+					Name = "位置",
+				},
+
+				--SUNO 组
+				LabelSUNO = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelSUNO",
+				},
+				SUNOStyledText = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "SUNOStyledText",
+				},
+				ShowSUNO = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowSUNO",
+				},
+				SUNOPos = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Center",
+					Name = "位置",
+				},
+
+				--专页署名组
+				LabelHindiBible = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelHindiBible",
+				},
+				HindiBibleStyledText = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "HindiBibleStyledText",
+				},
+				ShowHindiBible = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowHindiBible",
+				},
+				HindiBiblePos = InstanceInput {
+					SourceOp = "Perturb2",
+					Source = "Value",
+					Name = "位置",
+				},
+				HindiBiBleFont = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Font",
+				},
+				HindiBibleSize = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Size",
+					Default = 0.045,
+				},
+				HindiBibleColorR = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Red1Clone",
+					Name = "颜色",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				HindiBibleColorG = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Green1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				HindiBibleColorB = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Blue1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				HindiBibleColorA = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Alpha1Clone",
+					ControlGroup = 3,
+					Default = 1,
+				},
+				HindiBibleSize = InstanceInput {
+					SourceOp = "Perturb2",
+					Source = "Size",
+					Default = 0.045,
+				},
+				HindiBibleStrength = InstanceInput {
+					SourceOp = "Perturb2",
+					Source = "Strength",
+					MaxScale = 1,
+					Default = 0.47,
+				},
+				HindiBibleWobble = InstanceInput {
+					SourceOp = "Perturb2",
+					Source = "Wobble",
+					MaxScale = 1,
+					Default = 0.49,
+				},
+				HindiBibleSpeed = InstanceInput {
+					SourceOp = "Perturb2",
+					Source = "Speed",
+					MaxScale = 1,
+					Default = 0.25,
+				},
+
+				--AIcrate 组
+				LabelAIcrate = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "LabelAIcrate",
+				},
+				AIcrateStyledText = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "AIcrateStyledText",
+				},
+				ShowAIcrate = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "ShowAIcrate",
+				},
+				AIcratePos = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Center",
+					Name = "位置",
+				},
+				AIcrateFont = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Font",
+				},
+				AIcrateColorR = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Red1Clone",
+					Name = "颜色",
+					ControlGroup = 4,
+					Default = 1,
+				},
+				AIcrateColorG = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Green1Clone",
+					ControlGroup = 4,
+					Default = 1,
+				},
+				AIcrateColorB = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Blue1Clone",
+					ControlGroup = 4,
+					Default = 1,
+				},
+				AIcrateColorA = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Alpha1Clone",
+					ControlGroup = 4,
+					Default = 1,
+				},
+				AIcrateSize = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Size",
+					Default = 0.0354,
+					MaxScale = 1,
+				},
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "AIcrate",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				PipeRouter1 = PipeRouter {
+					CtrlWShown = false,
+					Inputs = {
+						ZapSplatStyledText = Input { Value = "Sound effects obtained from https://www.zapsplat.com", },
+						ElevenLabsStyledText = Input { Value = "elevenlabs.io", },
+						EndeMusicStyledText = Input { Value = "Music: Childhood by Sascha Ende / CC BY 4.0\nLink: https://ende.app/",},
+						SUNOStyledText = Input { Value = "Song attributed to suno", },
+						HindiBibleStyledText = Input { Value = "@ hindibible2024", },
+						AIcrateStyledText = Input { Value = "AI Created", },
+					},
+					UserControls = ordered() {
+						-- 通用样式
+						LabelGeneral = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 6,
+							INP_Default = 0,
+							LINKS_Name = "General",
+							ICS_ControlPage = "Controls",
+						},
+
+						-- ZaoSplat 组
+						LabelZapSplat = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 0,
+							LINKS_Name = "ZapSplat",
+						},
+						ShowZapSplat = {
+							INP_Integer = true,
+							LINKE_Label = "ZapSplat",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						ZapSplatStyledText = {
+							LINKS_Name = "署名",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 2,
+							TEC_Wrap = true,
+							TEC_ReadOnly = false,
+						},
+
+						-- ElevenLabs 组
+						LabelElevenLabs = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 1,
+							LINKS_Name = "ElevenLabs",
+						},
+						ShowElevenLabs = {
+							INP_Integer = true,
+							LINKE_Label = "ElevenLabs",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 1,
+						},
+						ElevenLabsStyledText = {
+							LINKS_Name = "署名",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 2,
+							TEC_Wrap = true,
+							TEC_ReadOnly = false,
+						},
+
+						-- EndeMusic 组
+						LabelEndeMusic = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 1,
+							LINKS_Name = "EndeMusic",
+						},
+						ShowEndeMusic = {
+							INP_Integer = true,
+							LINKE_Label = "EndeMusic",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 0,
+						},
+						EndeMusicStyledText = {
+							LINKS_Name = "署名",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 2,
+							TEC_Wrap = true,
+							TEC_ReadOnly = false,
+						},
+
+						-- SUNO 组
+						LabelSUNO = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 3,
+							INP_Default = 1,
+							LINKS_Name = "SUNO",
+						},
+						ShowSUNO = {
+							INP_Integer = true,
+							LINKE_Label = "SUNO",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 1,
+						},
+						SUNOStyledText = {
+							LINKS_Name = "署名",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 2,
+							TEC_Wrap = true,
+							TEC_ReadOnly = false,
+						},
+
+						-- 专页署名组
+						LabelHindiBible = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 11,
+							INP_Default = 1,
+							LINKS_Name = "hindibible",
+						},
+						ShowHindiBible = {
+							INP_Integer = true,
+							LINKE_Label = "hindiBible",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 1,
+						},
+						HindiBibleStyledText = {
+							LINKS_Name = "署名",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 2,
+							TEC_Wrap = true,
+							TEC_ReadOnly = false,
+						},
+
+						-- AIcrate 组
+						LabelAIcrate = {
+							LBLC_DropDownButton = true,
+							INPID_InputControl = "LabelControl",
+							LBLC_NumInputs = 7,
+							INP_Default = 1,
+							LINKS_Name = "AIcrate",
+							-- ICS_ControlPage = "Shading",
+						},
+						ShowAIcrate = {
+							INP_Integer = true,
+							LINKE_Label = "AIcrate",
+							LINKID_DataType = "Number",
+							INPID_InputControl = "CheckboxControl",
+							INP_MinScale = 0,
+							INP_MaxScale = 1,
+							INP_Default = 1,
+						},
+						AIcrateStyledText = {
+							LINKS_Name = "署名",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 2,
+							TEC_Wrap = true,
+							TEC_ReadOnly = false,
+						},
+					},	
+				},
+				-- Marge节点
+				ZapSplat = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowZapSplat", },
+						Background = Input {
+							SourceOp = "SUNO",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "zapsplatcom",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 49.5 } },
+				},
+				SUNO = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowSUNO", },
+						Background = Input {
+							SourceOp = "EndeMusic",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "sunoai",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 49.5 } },
+				},
+				AIcrate = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowAIcrate", },
+						Background = Input {
+							SourceOp = "ZapSplat",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Imagefromai",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 49.5 } },
+				},
+				EndeMusic = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowEndeMusic", },
+						Background = Input {
+							SourceOp = "ElevenLabs",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "ende",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 0, 49.5 } },
+				},
+				ElevenLabs = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowElevenLabs", },
+						Background = Input {
+							SourceOp = "专业署名",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "elevenlabsio",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -110, 49.5 } },
+				},
+				["专业署名"] = Merge {
+					CtrlWShown = false,
+					NameSet = true,
+					Inputs = {
+						Blend = Input { Expression = "PipeRouter1.ShowHindiBible", },
+						Background = Input {
+							SourceOp = "BG",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "hindibible",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -220, 49.5 } },
+				},
+				-- 文字效果
+				sunoai = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Level4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Round4 = Input {
+							Value = Number {
+								Value = 0.162
+							},
+						},
+						Alpha4 = Input {
+							Value = Number {
+								Value = 0.5
+							},
+						},
+						Softness4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						Center = Input { Value = { 0.0472430807990633, 0.0250053421750863 }, },
+						SelectElement = Input { Value = 2, },
+						Select = Input { Value = 2, },
+						Enabled1 = Input { Value = 1, },
+						Enabled2 = Input { Value = 0, },
+						Enabled3 = Input { Value = 1, },
+						Opacity1 = Input { Value = 0.85, },
+						Overlap1 = Input { Value = 2, },
+						ElementShape1 = Input { Value = 0, },
+						Type1 = Input { Value = 0, },
+						Red1 = Input { Value = 1, },
+						Green1 = Input { Value = 1, },
+						Blue1 = Input { Value = 1, },
+						Alpha1 = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						Opacity2 = Input { Value = 1, },
+						Overlap2 = Input { Value = 2, },
+						ElementShape2 = Input { Value = 1, },
+						Thickness2 = Input { Value = 0.02, },
+						AdaptThicknessToPerspective2 = Input { Value = 0, },
+						OutsideOnly2 = Input { Value = 0, },
+						CleanIntersections2 = Input { Value = 0, },
+						JoinStyle2 = Input { Value = 1, },
+						LineStyle2 = Input { Value = 0, },
+						Type2 = Input { Value = 0, },
+						Red2 = Input { Value = 1, },
+						Green2 = Input { Value = 0, },
+						Blue2 = Input { Value = 0, },
+						Alpha2 = Input { Value = 1, },
+						Softness2 = Input { Value = 1, },
+						Opacity3 = Input { Value = 1, },
+						Overlap3 = Input { Value = 2, },
+						ElementShape3 = Input { Value = 0, },
+						Level3 = Input { Value = 1, },
+						ExtendHorizontal3 = Input { Value = 0, },
+						ExtendVertical3 = Input { Value = 0, },
+						Round3 = Input { Value = 0, },
+						Type3 = Input { Value = 0, },
+						Red3 = Input { Value = 0, },
+						Green3 = Input { Value = 0, },
+						Blue3 = Input { Value = 0, },
+						Alpha3 = Input { Value = 1, },
+						Softness3 = Input { Value = 1, },
+						SoftnessX3 = Input { Value = 1, },
+						SoftnessY3 = Input { Value = 1, },
+						Rotation3 = Input { Value = 1, },
+						PivotNest3 = Input { Value = 1, },
+						Shear3 = Input { Value = 1, },
+						StyledText = Input { Value = "Song attributed to suno", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Extrabold", },
+						Size = Input { Value = 0.034, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 110, 16.5 } },
+				},
+				elevenlabsio = TextPlus {
+					CtrlWZoom = false,
+					NameSet = true,
+					Inputs = {
+						Level4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Round4 = Input {
+							Value = Number {
+								Value = 0.162
+							},
+						},
+						Alpha4 = Input {
+							Value = Number {
+								Value = 0.5
+							},
+						},
+						Softness4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						Center = Input { Value = { 0.0475487779915538, 0.0403337404301712 }, },
+						SelectElement = Input { Value = 2, },
+						Select = Input { Value = 2, },
+						Enabled1 = Input { Expression = "sunoai.Enabled1", },
+						Enabled2 = Input { Expression = "sunoai.Enabled2", },
+						Enabled3 = Input { Expression = "sunoai.Enabled3", },
+						Opacity1 = Input { Expression = "sunoai.Opacity1", },
+						Overlap1 = Input { Expression = "sunoai.Overlap1", },
+						ElementShape1 = Input { Expression = "sunoai.ElementShape1", },
+						Type1 = Input { Expression = "sunoai.Type1", },
+						Red1 = Input { Expression = "sunoai.Red1", },
+						Green1 = Input { Expression = "sunoai.Green1", },
+						Blue1 = Input { Expression = "sunoai.Blue1", },
+						Alpha1 = Input { Expression = "sunoai.Alpha1", },
+						Position1 = Input { Value = 0, },
+						Opacity2 = Input { Expression = "sunoai.Opacity2", },
+						Overlap2 = Input { Expression = "sunoai.Overlap2", },
+						ElementShape2 = Input { Expression = "sunoai.ElementShape2", },
+						Thickness2 = Input { Expression = "sunoai.Thickness2", },
+						AdaptThicknessToPerspective2 = Input { Expression = "sunoai.AdaptThicknessToPerspective2", },
+						OutsideOnly2 = Input { Expression = "sunoai.OutsideOnly2", },
+						CleanIntersections2 = Input { Expression = "sunoai.CleanIntersections2", },
+						JoinStyle2 = Input { Expression = "sunoai.JoinStyle2", },
+						LineStyle2 = Input { Expression = "sunoai.LineStyle2", },
+						Red2 = Input { Expression = "sunoai.Red2", },
+						Green2 = Input { Expression = "sunoai.Green2", },
+						Blue2 = Input { Expression = "sunoai.Blue2", },
+						Alpha2 = Input { Expression = "sunoai.Alpha2", },
+						Softness2 = Input { Value = 1, },
+						Opacity3 = Input { Expression = "sunoai.Opacity3", },
+						Overlap3 = Input { Expression = "sunoai.Overlap3", },
+						ElementShape3 = Input { Expression = "sunoai.ElementShape3", },
+						Type3 = Input { Expression = "sunoai.Type3", },
+						Red3 = Input { Expression = "sunoai.Red3", },
+						Green3 = Input { Expression = "sunoai.Green3", },
+						Blue3 = Input { Expression = "sunoai.Blue3", },
+						Alpha3 = Input { Expression = "sunoai.Alpha3", },
+						Softness3 = Input { Value = 1, },
+						SoftnessX3 = Input { Expression = "sunoai.SoftnessX3", },
+						SoftnessY3 = Input { Expression = "sunoai.SoftnessY3", },
+						StyledText = Input { Value = "elevenlabs.io", },
+						Font = Input { Expression = "sunoai.Font", },
+						Style = Input { Expression = "sunoai.Style", },
+						Size = Input { Expression = "sunoai.Size", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -110, 16.5 } },
+				},
+				ende = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Level4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Round4 = Input {
+							Value = Number {
+								Value = 0.162
+							},
+						},
+						Alpha4 = Input {
+							Value = Number {
+								Value = 0.5
+							},
+						},
+						Softness4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						Center = Input { Value = { 0.0490520898001159, 0.0632858778649021 }, },
+						SelectElement = Input { Value = 1, },
+						Select = Input { Value = 1, },
+						Enabled1 = Input { Expression = "sunoai.Enabled1", },
+						Enabled2 = Input { Expression = "sunoai.Enabled2", },
+						Enabled3 = Input { Expression = "sunoai.Enabled3", },
+						Opacity1 = Input { Expression = "sunoai.Opacity1", },
+						Overlap1 = Input { Expression = "sunoai.Overlap1", },
+						ElementShape1 = Input { Expression = "sunoai.ElementShape1", },
+						Type1 = Input { Expression = "sunoai.Type1", },
+						Red1 = Input { Expression = "sunoai.Red1", },
+						Green1 = Input { Expression = "sunoai.Green1", },
+						Blue1 = Input { Expression = "sunoai.Blue1", },
+						Alpha1 = Input { Expression = "sunoai.Alpha1", },
+						Opacity2 = Input { Expression = "sunoai.Opacity2", },
+						Overlap2 = Input { Expression = "sunoai.Overlap2", },
+						ElementShape2 = Input { Expression = "sunoai.ElementShape2", },
+						Thickness2 = Input { Expression = "sunoai.Thickness2", },
+						AdaptThicknessToPerspective2 = Input { Expression = "sunoai.AdaptThicknessToPerspective2", },
+						OutsideOnly2 = Input { Expression = "sunoai.OutsideOnly2", },
+						CleanIntersections2 = Input { Expression = "sunoai.CleanIntersections2", },
+						JoinStyle2 = Input { Expression = "sunoai.JoinStyle2", },
+						LineStyle2 = Input { Expression = "sunoai.LineStyle2", },
+						Type2 = Input { Expression = "sunoai.Type2", },
+						Red2 = Input { Expression = "sunoai.Red2", },
+						Green2 = Input { Expression = "sunoai.Green2", },
+						Blue2 = Input { Expression = "sunoai.Blue2", },
+						Alpha2 = Input { Expression = "sunoai.Alpha2", },
+						Softness2 = Input { Value = 1, },
+						Opacity3 = Input { Expression = "sunoai.Opacity3", },
+						Overlap3 = Input { Expression = "sunoai.Overlap3", },
+						ElementShape3 = Input { Expression = "sunoai.ElementShape3", },
+						Type3 = Input { Expression = "sunoai.Type3", },
+						Red3 = Input { Expression = "sunoai.Red3", },
+						Green3 = Input { Expression = "sunoai.Green3", },
+						Blue3 = Input { Expression = "sunoai.Blue3", },
+						Alpha3 = Input { Expression = "sunoai.Alpha3", },
+						Softness3 = Input { Value = 1, },
+						SoftnessX3 = Input { Expression = "sunoai.SoftnessX3", },
+						SoftnessY3 = Input { Expression = "sunoai.SoftnessY3", },
+						StyledText = Input { Value = "Music: Childhood by Sascha Ende / CC BY 4.0\nLink: https://ende.app/", },
+						Font = Input { Expression = "sunoai.Font", },
+						Style = Input { Expression = "sunoai.Style", },
+						Size = Input { Expression = "sunoai.Size", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 0, 16.5 } },
+				},
+				hindibible = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Wrap = Input { Value = 1, },
+						Center = Input {
+							SourceOp = "Perturb2",
+							Source = "Value",
+						},
+						LayoutRotation = Input { Value = 1, },
+						TransformRotation = Input { Value = 1, },
+						Softness1 = Input { Value = 1, },
+						StyledText = Input { Value = "@ hindibible2024", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Bold", },
+						Size = Input { Value = 0.045, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -220, 16.5 } },
+				},
+				Perturb2 = PerturbPoint {
+					CtrlWZoom = false,
+					Inputs = {
+						Value = Input { Value = { 0.5, 0.337 }, },
+						Strength = Input { Value = 0.47, },
+						Wobble = Input { Value = 0.49, },
+						Speed = Input { Value = 0.25, }
+					},
+				},
+				Imagefromai = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Softness3 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						Center = Input { Value = { 0.831543690026155, 0.938267245564936 }, },
+						CharacterSpacing = Input { Value = 0.99, },
+						Enabled4 = Input { Value = 1, },
+						Opacity1 = Input { Value = 0.811, },
+						StyledText = Input { Value = "AI Created", },
+						Font = Input { Value = "Open Sans", },
+						Style = Input { Value = "Extrabold", },
+						Size = Input { Value = 0.0354, },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, },
+						Level4 = Input { Value = 1, },
+						ExtendHorizontal4 = Input { Value = 0.054, },
+						ExtendVertical4 = Input { Value = 0.093, },
+						Blue4 = Input { Value = 0, },
+						Alpha4 = Input { Value = 0.5, },
+						Softness4 = Input { Value = 1, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 330, 16.5 } },
+				},
+				zapsplatcom = TextPlus {
+					NameSet = true,
+					Inputs = {
+						Level4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Round4 = Input {
+							Value = Number {
+								Value = 0.162
+							},
+						},
+						Alpha4 = Input {
+							Value = Number {
+								Value = 0.5
+							},
+						},
+						Softness4 = Input {
+							Value = Number {
+								Value = 1
+							},
+						},
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						Center = Input { Value = { 0.0478510944875311, 0.0105619769799892 }, },
+						SelectElement = Input { Value = 1, },
+						Select = Input { Value = 1, },
+						Enabled1 = Input { Expression = "sunoai.Enabled1", },
+						Enabled2 = Input { Expression = "sunoai.Enabled2", },
+						Enabled3 = Input { Expression = "sunoai.Enabled3", },
+						SortShadingElements = Input { Expression = "sunoai.SortShadingElements", },
+						Opacity1 = Input { Expression = "sunoai.Opacity1", },
+						Overlap1 = Input { Expression = "sunoai.Overlap1", },
+						ElementShape1 = Input { Expression = "sunoai.ElementShape1", },
+						Type1 = Input { Expression = "sunoai.Type1", },
+						Red1 = Input { Expression = "sunoai.Red1", },
+						Green1 = Input { Expression = "sunoai.Green1", },
+						Blue1 = Input { Expression = "sunoai.Blue1", },
+						Alpha1 = Input { Expression = "sunoai.Alpha1", },
+						Opacity2 = Input { Expression = "sunoai.Opacity2", },
+						Overlap2 = Input { Expression = "sunoai.Overlap2", },
+						ElementShape2 = Input { Expression = "sunoai.ElementShape2", },
+						Thickness2 = Input { Expression = "sunoai.Thickness2", },
+						AdaptThicknessToPerspective2 = Input { Expression = "sunoai.AdaptThicknessToPerspective2", },
+						OutsideOnly2 = Input { Expression = "sunoai.OutsideOnly2", },
+						CleanIntersections2 = Input { Expression = "sunoai.CleanIntersections2", },
+						JoinStyle2 = Input { Expression = "sunoai.JoinStyle2", },
+						LineStyle2 = Input { Expression = "sunoai.LineStyle2", },
+						Type2 = Input { Expression = "sunoai.Type2", },
+						Red2 = Input { Expression = "sunoai.Red2", },
+						Green2 = Input { Expression = "sunoai.Green2", },
+						Blue2 = Input { Expression = "sunoai.Blue2", },
+						Alpha2 = Input { Expression = "sunoai.Alpha2", },
+						Softness2 = Input { Value = 1, },
+						Opacity3 = Input { Expression = "sunoai.Opacity3", },
+						Overlap3 = Input { Expression = "sunoai.Overlap3", },
+						ElementShape3 = Input { Expression = "sunoai.ElementShape3", },
+						Level3 = Input { Expression = "sunoai.Level3", },
+						ExtendHorizontal3 = Input { Expression = "sunoai.ExtendHorizontal3", },
+						ExtendVertical3 = Input { Expression = "sunoai.ExtendVertical3", },
+						Round3 = Input { Expression = "sunoai.Round3", },
+						Type3 = Input { Expression = "sunoai.Type3", },
+						Red3 = Input { Expression = "sunoai.Red3", },
+						Green3 = Input { Expression = "sunoai.Green3", },
+						Blue3 = Input { Expression = "sunoai.Blue3", },
+						Alpha3 = Input { Expression = "sunoai.Alpha3", },
+						Softness3 = Input { Value = 1, },
+						SoftnessX3 = Input { Expression = "sunoai.SoftnessX3", },
+						SoftnessY3 = Input { Expression = "sunoai.SoftnessY3", },
+						Rotation3 = Input { Value = 1, },
+						PivotNest3 = Input { Value = 1, },
+						Shear3 = Input { Value = 1, },
+						Size3 = Input { Value = 1, },
+						StyledText = Input { Expression = "PipeRouter1.ZapSplatStyledText", },
+						Font = Input { Expression = "sunoai.Font", },
+						Style = Input { Expression = "sunoai.Style", },
+						Size = Input { Expression = "sunoai.Size", },
+						VerticalJustificationNew = Input { Value = 3, },
+						HorizontalLeftCenterRight = Input { Value = -1, },
+						HorizontalJustificationNew = Input { Value = 3, }
+					},
+					ViewInfo = OperatorInfo { Pos = { 220, 16.5 } },
+				},
+				BG = Background {
+					Inputs = {
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						TopLeftAlpha = Input { Value = 0, }
+					},
+					ViewInfo = OperatorInfo { Pos = { -330, 49.5 } },
+				}
+			},
+			UserControls = ordered() {
+				UIManagerButton = {
+					LINKID_DataType = "Number",
+					INP_External = false,
+					INPID_InputControl = "LabelControl",
+					BTNCS_Execute = "",
+					IC_ControlPage = -1,
+					INP_Passive = true,
+					LINKS_Name = "文字署名",
+				},
+			},
+		},
+	},
+	ActiveTool = "文字署名"
+}
