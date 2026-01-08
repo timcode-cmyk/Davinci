@@ -495,9 +495,9 @@
 				Template = TextPlus {
 					CtrlWZoom = false,
 					Inputs = {
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
-						UseFrameFormatSettings = Input { Value = 0, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
+						UseFrameFormatSettings = Input { Value = 1, },
 						Center = Input {
 							SourceOp = "Perturb1",
 							Source = "Value",

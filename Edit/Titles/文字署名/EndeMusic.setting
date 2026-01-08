@@ -7,7 +7,7 @@
 				GlobalOut = Input { Value = 1249, },
 				Width = Input { Value = 1080, },
 				Height = Input { Value = 1920, },
-				UseFrameFormatSettings = Input { Value = 0, },
+				UseFrameFormatSettings = Input { Value = 1, },
 				Center = Input { Value = { 0.0490520898001159, 0.0608223180209276 }, },
 				SelectElement = Input { Value = 2, },
 				Select = Input { Value = 2, },
