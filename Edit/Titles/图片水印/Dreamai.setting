@@ -123,8 +123,8 @@
 				Background1_1 = Background {
 					CtrlWShown = false,
 					Inputs = {
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						TopLeftAlpha = Input { Value = 0, }

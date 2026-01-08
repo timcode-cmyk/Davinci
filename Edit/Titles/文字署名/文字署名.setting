@@ -409,7 +409,7 @@
 						LabelAIcrate = {
 							LBLC_DropDownButton = true,
 							INPID_InputControl = "LabelControl",
-							LBLC_NumInputs = 8,
+							LBLC_NumInputs = 9,
 							INP_Default = 1,
 							LINKS_Name = "AIcrate",
 							-- ICS_ControlPage = "Shading",
@@ -560,8 +560,8 @@
 								Value = 1
 							},
 						},
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						Center = Input { Value = { 0.0472430807990633, 0.0250053421750863 }, },
 						SelectElement = Input { Value = 2, },
@@ -645,8 +645,8 @@
 								Value = 1
 							},
 						},
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						Center = Input { Value = { 0.0475487779915538, 0.0403337404301712 }, },
 						SelectElement = Input { Value = 2, },
@@ -721,8 +721,8 @@
 								Value = 1
 							},
 						},
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						Center = Input { Value = { 0.0490520898001159, 0.0632858778649021 }, },
 						SelectElement = Input { Value = 1, },
@@ -777,8 +777,8 @@
 				hindibible = TextPlus {
 					NameSet = true,
 					Inputs = {
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
 						Wrap = Input { Value = 1, },
@@ -815,8 +815,8 @@
 								Value = 1
 							},
 						},
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						Center = Input { Value = { 0.831543690026155, 0.938267245564936 }, },
 						CharacterSpacing = Input { Value = 0.99, },
@@ -861,8 +861,8 @@
 								Value = 1
 							},
 						},
-						Width = Input { Value = 1920, },
-						Height = Input { Value = 1080, },
+						Width = Input { Value = 1080, },
+						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 0, },
 						Center = Input { Value = { 0.0478510944875311, 0.0105619769799892 }, },
 						SelectElement = Input { Value = 1, },
