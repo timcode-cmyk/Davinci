@@ -1,0 +1,365 @@
+{
+	Tools = ordered() {
+		Animation_1 = MacroOperator {
+			Inputs = ordered() {
+				Comments = Input { Value = "Animation Toolkit made by ViccoVlog \nupdate:20230802 \n\nBilibili: @ViccoVlog \nYoutube: @ViccoVlog", },
+				Label0 = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "Label0",
+					Page = "Controls",
+				},
+				Input2 = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "In",
+					Name = "入场",
+					Width = 0.5,
+					Page = "Controls",
+					Default = 1,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "Out",
+					Name = "出场",
+					Width = 0.5,
+					Page = "Controls",
+					Default = 1,
+				},
+				Input1 = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "AnimationTime",
+					Name = "动画时长",
+					Page = "Controls",
+					Default = 30,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "A1",
+					Source = "EaseIn",
+					Name = "缓动曲线",
+					Width = 0.5,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "A1",
+					Source = "EaseOut",
+					Width = 0.5,
+				},
+
+				Label1 = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "Label1",
+					Page = "Controls",
+				},
+				Input4 = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "InputValue",
+					Name = "动画输入值",
+					Page = "Controls",
+				},
+				COLA = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "COLA",
+					Page = "Controls",
+				},
+				TAOBAO = InstanceInput {
+					SourceOp = "Animation1",
+					Source = "TAOBAO",
+					Page = "Controls",
+				},
+				
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				Animation1 = Custom {
+					CtrlWZoom = false,
+					NameSet = true,
+					Inputs = {
+						LUTIn1 = Input {
+							SourceOp = "Animation1LUTIn1",
+							Source = "Value",
+						},
+						LUTIn2 = Input {
+							SourceOp = "Animation1LUTIn2",
+							Source = "Value",
+						},
+						LUTIn3 = Input {
+							SourceOp = "Animation1LUTIn3",
+							Source = "Value",
+						},
+						LUTIn4 = Input {
+							SourceOp = "Animation1LUTIn4",
+							Source = "Value",
+						},
+						NumberControls = Input { Value = 1, },
+						ShowNumber1 = Input { Value = 0, },
+						ShowNumber2 = Input { Value = 0, },
+						ShowNumber3 = Input { Value = 0, },
+						ShowNumber4 = Input { Value = 0, },
+						ShowNumber5 = Input { Value = 0, },
+						ShowNumber6 = Input { Value = 0, },
+						ShowNumber7 = Input { Value = 0, },
+						ShowNumber8 = Input { Value = 0, },
+						PointControls = Input { Value = 1, },
+						ShowPoint1 = Input { Value = 0, },
+						ShowPoint2 = Input { Value = 0, },
+						ShowPoint3 = Input { Value = 0, },
+						ShowPoint4 = Input { Value = 0, },
+						LUTControls = Input { Value = 1, },
+						ShowLUT1 = Input { Value = 0, },
+						ShowLUT2 = Input { Value = 0, },
+						ShowLUT3 = Input { Value = 0, },
+						ShowLUT4 = Input { Value = 0, },
+						AnimationIn = Input {
+							SourceOp = "AIn",
+							Source = "Value",
+						},
+						AnimationOut = Input {
+							SourceOp = "AOut",
+							Source = "Value",
+						},
+						Animation = Input {
+							SourceOp = "A1",
+							Source = "Value",
+						},
+						InputValue = Input { Value = "A1.Value", },
+					},
+					ViewInfo = OperatorInfo { Pos = { 385, 16.5 } },
+					UserControls = ordered() {
+						AnimationIn = {
+							INP_MaxAllowed = 1,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Animation In"
+						},
+						AnimationOut = {
+							INP_MaxAllowed = 1,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Animation Out"
+						},
+						Animation = {
+							INP_MaxAllowed = 1,
+							INP_Integer = false,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "Animation"
+						},
+						AnimationTime = {
+							INP_MaxAllowed = 10000,
+							INP_Integer = true,
+							INPID_InputControl = "ScrewControl",
+							INP_MaxScale = 300,
+							INP_Default = 30,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							LINKS_Name = "AnimationTime"
+						},
+						In = {
+							INP_MaxAllowed = 1,
+							INP_Integer = true,
+							INPID_InputControl = "CheckboxControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							CBC_TriState = false,
+							ICD_Width = 0.5,
+							LINKS_Name = "In"
+						},
+						Out = {
+							INP_MaxAllowed = 1,
+							INP_Integer = true,
+							INPID_InputControl = "CheckboxControl",
+							INP_MaxScale = 1,
+							INP_Default = 1,
+							INP_MinScale = 0,
+							INP_MinAllowed = 0,
+							LINKID_DataType = "Number",
+							ICS_ControlPage = "Controls",
+							CBC_TriState = false,
+							ICD_Width = 0.5,
+							LINKS_Name = "Out"
+						},
+						InputValue = {
+							LINKS_Name = "Input Value",
+							LINKID_DataType = "Text",
+							INPID_InputControl = "TextEditControl",
+							TEC_Lines = 1,
+							TEC_Wrap = false,
+							TEC_ReadOnly = true,
+							ICS_ControlPage = "Controls",
+						},
+						Label0 = {
+							INP_Default = 1,
+							LBLC_NumInputs = 5,
+							INPID_InputControl = "LabelControl",
+							LBLC_DropDownButton = true,
+							LINKS_Name = "动画",
+						},	
+						Label1 = {
+							INP_Default = 1,
+							LBLC_NumInputs = 1,
+							INPID_InputControl = "LabelControl",
+							LBLC_DropDownButton = true,
+							LINKS_Name = "描述",
+						},
+
+					}
+				},
+				Animation1LUTIn1 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 0, Blue = 0 },
+					CtrlWZoom = false,
+				},
+				Animation1LUTIn2 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 204, Blue = 0 },
+					CtrlWZoom = false,
+				},
+				Animation1LUTIn3 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 0, Green = 0, Blue = 204 },
+					CtrlWZoom = false,
+				},
+				Animation1LUTIn4 = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 204, Green = 204, Blue = 204 },
+					CtrlWZoom = false,
+				},
+				AIn = LUTLookup {
+					CtrlWZoom = false,
+					NameSet = true,
+					Inputs = {
+						Source = Input { Value = FuID { "Duration" }, },
+						Lookup = Input {
+							SourceOp = "AIn查找表",
+							Source = "Value",
+						},
+						TimeScale = Input {
+							Value = 5,
+							Expression = "(comp.RenderEnd-comp.RenderStart+1)/Animation1.AnimationTime",
+						},
+					},
+				},
+				["AIn查找表"] = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 255, Green = 255, Blue = 255 },
+					CtrlWZoom = false,
+				},
+				AOut = LUTLookup {
+					CtrlWZoom = false,
+					NameSet = true,
+					Inputs = {
+						Source = Input { Value = FuID { "Duration" }, },
+						Lookup = Input {
+							SourceOp = "AOut查找表",
+							Source = "Value",
+						},
+						Invert = Input { Value = 1, },
+						TimeScale = Input {
+							Value = 5,
+							Expression = "(comp.RenderEnd-comp.RenderStart+1)/Animation1.AnimationTime",
+						},
+						TimeOffset = Input {
+							Value = 0.793333333333333,
+							Expression = "1-(Animation1.AnimationTime+1)/(comp.RenderEnd-comp.RenderStart+1)",
+						},
+					},
+				},
+				["AOut查找表"] = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 255, Green = 255, Blue = 255 },
+					CtrlWZoom = false,
+				},
+				A1 = LUTLookup {
+					CtrlWZoom = false,
+					NameSet = true,
+					Inputs = {
+						Source = Input { Value = FuID { "Custom" }, },
+						Input = Input {
+							Value = 1,
+							Expression = "Animation1.In==1 and Animation1.AnimationIn*iif(Animation1.Out==1,Animation1.AnimationOut,1) or iif(Animation1.Out==1,Animation1.AnimationOut,1)",
+						},
+						Curve = Input { Value = FuID { "Easing" }, },
+						EaseOut = Input { Value = FuID { "Back" }, },
+						Lookup = Input {
+							SourceOp = "A1查找表",
+							Source = "Value",
+						},
+					},
+				},
+				["A1查找表"] = LUTBezier {
+					KeyColorSplines = {
+						[0] = {
+							[0] = { 0, RH = { 0.333333333333333, 0.333333333333333 }, Flags = { Linear = true } },
+							[1] = { 1, LH = { 0.666666666666667, 0.666666666666667 }, Flags = { Linear = true } }
+						}
+					},
+					SplineColor = { Red = 255, Green = 255, Blue = 255 },
+					CtrlWZoom = false,
+				}
+			},
+			UserControls = ordered() {
+				UIManagerButton = {
+					INPID_InputControl = "LabelControl",
+					INP_External = false,
+					LINKID_DataType = "Number",
+					BTNCS_Execute = "",
+					IC_ControlPage = -1,
+					INP_Passive = true,
+					LINKS_Name = "ViccoVlog Animation Toolkit",
+				}
+			}
+		}
+	},
+	ActiveTool = "Animation_1"
+}

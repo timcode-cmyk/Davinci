@@ -13,6 +13,12 @@
 					ControlGroup = 1,
 					Default = "Open Sans",
 				},
+				GeneralStyle = InstanceInput {
+					SourceOp = "sunoai",
+					Source = "Style",
+					ControlGroup = 1,
+					Default = "Extrabold",
+				},
 				GeneralColorR = InstanceInput {
 					SourceOp = "sunoai",
 					Source = "Red1Clone",
@@ -52,7 +58,6 @@
 				ZapSplatStyledText = InstanceInput {
 					SourceOp = "PipeRouter1",
 					Source = "ZapSplatStyledText",
-					Default = "默认文本内容",
 				},
 				ShowZapSplat = InstanceInput {
 					SourceOp = "PipeRouter1",
@@ -142,6 +147,14 @@
 				HindiBiBleFont = InstanceInput {
 					SourceOp = "hindibible",
 					Source = "Font",
+					ControlGroup = 5,
+					Default = "Open Sans",
+				},
+				HindiBibleStyle = InstanceInput {
+					SourceOp = "hindibible",
+					Source = "Style",
+					ControlGroup = 5,
+					Default = "Bold",
 				},
 				HindiBibleSize = InstanceInput {
 					SourceOp = "hindibible",
@@ -213,6 +226,14 @@
 				AIcrateFont = InstanceInput {
 					SourceOp = "Imagefromai",
 					Source = "Font",
+					ControlGroup = 6,
+					Default = "Khula",
+				},
+				AIcrateStyle = InstanceInput {
+					SourceOp = "Imagefromai",
+					Source = "Style",
+					ControlGroup = 6,
+					Default = "Extrabold",
 				},
 				AIcrateColorR = InstanceInput {
 					SourceOp = "Imagefromai",
@@ -262,14 +283,14 @@
 						EndeMusicStyledText = Input { Value = "Music: Childhood by Sascha Ende / CC BY 4.0\nLink: https://ende.app/",},
 						SUNOStyledText = Input { Value = "Song attributed to suno", },
 						HindiBibleStyledText = Input { Value = "@ hindibible2024", },
-						AIcrateStyledText = Input { Value = "AI Created", },
+						AIcrateStyledText = Input { Value = "AI Created\nAI-जनित", },
 					},
 					UserControls = ordered() {
 						-- 通用样式
 						LabelGeneral = {
 							LBLC_DropDownButton = true,
 							INPID_InputControl = "LabelControl",
-							LBLC_NumInputs = 6,
+							LBLC_NumInputs = 7,
 							INP_Default = 0,
 							LINKS_Name = "General",
 							ICS_ControlPage = "Controls",
@@ -383,7 +404,7 @@
 						LabelHindiBible = {
 							LBLC_DropDownButton = true,
 							INPID_InputControl = "LabelControl",
-							LBLC_NumInputs = 11,
+							LBLC_NumInputs = 13,
 							INP_Default = 1,
 							LINKS_Name = "hindibible",
 						},
@@ -409,7 +430,7 @@
 						LabelAIcrate = {
 							LBLC_DropDownButton = true,
 							INPID_InputControl = "LabelControl",
-							LBLC_NumInputs = 9,
+							LBLC_NumInputs = 10,
 							INP_Default = 1,
 							LINKS_Name = "AIcrate",
 							-- ICS_ControlPage = "Shading",
@@ -818,14 +839,14 @@
 						Width = Input { Value = 1080, },
 						Height = Input { Value = 1920, },
 						UseFrameFormatSettings = Input { Value = 1, },
-						Center = Input { Value = { 0.831543690026155, 0.938267245564936 }, },
+						Center = Input { Value = { 0.831543690026155, 0.928267245564936 }, },
 						CharacterSpacing = Input { Value = 0.99, },
 						Enabled4 = Input { Value = 1, },
 						Opacity1 = Input { Value = 0.811, },
 						StyledText = Input { Expression = "PipeRouter1.AIcrateStyledText", },
-						Font = Input { Value = "Open Sans", },
+						Font = Input { Value = "Khula", },
 						Style = Input { Value = "Extrabold", },
-						Size = Input { Value = 0.0354, },
+						Size = Input { Value = 0.0427, },
 						VerticalJustificationNew = Input { Value = 3, },
 						HorizontalLeftCenterRight = Input { Value = -1, },
 						HorizontalJustificationNew = Input { Value = 3, },
